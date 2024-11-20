@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "LogIn/LogOut";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <!-- login.css -->
+    <link rel="stylesheet" href="~/css/login.css" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body style="background-color: #56baed;">
+
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- pestañas -->
+            <h2 class="tab active" id="signInTab">Iniciar Sesión</h2>
+            <h2 class="tab inactive underlineHover" id="signUpTab">Registrarse</h2>
+
+            <!-- img -->
+            <div class="fadeIn first">
+                <img src="~/images/login_icon.png" id="icon" alt="Icono de Usuario" />
+            </div>
+
+            <!-- error o éxito -->
+            @if (!string.IsNullOrEmpty(ViewBag.Error as string))
+            {
+                <div class="alert alert-danger fadeIn">
+                    @ViewBag.Error
+                </div>
+            }
+            @if (!string.IsNullOrEmpty(ViewBag.Success as string))
+            {
+                <div class="alert alert-success fadeIn">
+                    @ViewBag.Success
+                </div>
+            }
+
+            <!-- frmLogin -->
+            <form id="signInForm" method="post" asp-action="Login" style="display: block;">
+                <input type="email" id="loginEmail" class="fadeIn second" name="email" placeholder="Correo Electrónico" required>
+                <input type="password" id="loginPassword" class="fadeIn third" name="password" placeholder="Contraseña" required>
+                <input type="submit" class="fadeIn fourth" value="Iniciar Sesión">
+            </form>
+
+            <!-- frmRegistro -->
+            <form id="signUpForm" method="post" asp-action="Register" style="display: none;">
+                <input type="text" id="name" class="fadeIn second" name="name" placeholder="Nombre Completo" required>
+                <input type="email" id="regEmail" class="fadeIn second" name="email" placeholder="Correo Electrónico" required>
+                <input type="password" id="regPassword" class="fadeIn third" name="password" placeholder="Contraseña" required>
+                <input type="password" id="confirmPassword" class="fadeIn third" name="confirmPassword" placeholder="Confirmar Contraseña" required>
+                <input type="submit" class="fadeIn fourth" value="Registrarse">
+            </form>
+
+            <!-- pie de formulario -->
+            <div id="formFooter">
+                <a class="underlineHover" href="javascript:void(0);">¿Olvidaste tu contraseña?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- esenciales -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- scripts para pestañas -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const signInTab = document.getElementById("signInTab");
+            const signUpTab = document.getElementById("signUpTab");
+            const signInForm = document.getElementById("signInForm");
+            const signUpForm = document.getElementById("signUpForm");
+
+            // pestañas
+            signInTab.addEventListener("click", function () {
+                signInForm.style.display = "block";
+                signUpForm.style.display = "none";
+                signInTab.classList.add("active");
+                signUpTab.classList.remove("active");
+            });
+
+            signUpTab.addEventListener("click", function () {
+                signInForm.style.display = "none";
+                signUpForm.style.display = "block";
+                signUpTab.classList.add("active");
+                signInTab.classList.remove("active");
+            });
+        });
+    </script>
+</body>
+</html>

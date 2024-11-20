@@ -1,0 +1,52 @@
+﻿@model ParcialATIS.Models.Auto
+
+
+
+
+@{
+
+    ViewData["Title"] = "Agregar Auto";
+
+    <h3 class="text-center" style="color: #44997e; font-weight: bold;">Agregar Nuevo Auto</h3>
+
+    <form asp-action="Create" method="post" class="p-4 shadow-lg rounded bg-light mx-auto mt-5" style="max-width: 600px;">
+        <div class="form-group mb-3">
+            <label for="Marca" style="font-weight: 500; color: #444;">Marca</label>
+            <input type="text" class="form-control" id="Marca" name="Marca" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;" />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Modelo" style="font-weight: 500; color: #444;">Modelo</label>
+            <input type="text" class="form-control" id="Modelo" name="Modelo" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;" />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Placa" style="font-weight: 500; color: #444;">Placa</label>
+            <input type="text" class="form-control" id="Placa" name="Placa" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;" />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Tipo" style="font-weight: 500; color: #444;">Tipo</label>
+            <input type="text" class="form-control" id="Tipo" name="Tipo" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;" />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Estado" style="font-weight: 500; color: #444;">Estado</label>
+            <select class="form-control" id="Estado" name="Estado" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;">
+                <option value="Disponible">Disponible</option>
+                <option value="No Disponible">No Disponible</option>
+            </select>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="CostoDia" style="font-weight: 500; color: #444;">Costo por Día</label>
+            <input type="number" class="form-control" id="CostoDia" name="CostoDia" step="0.01" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;" />
+        </div>
+
+        <div class="d-flex justify-content-center mt-4">
+            <button type="submit" class="btn" style="background-color: #44997e; color: white; font-weight: bold; padding: 10px 20px; border-radius: 8px; border: none;">
+                Guardar Auto
+            </button>
+        </div>
+    </form>
+}
