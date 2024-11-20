@@ -69,7 +69,8 @@ h2.tab {
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="tel"] {
     background-color: #f6f6f6;
     border: none;
     color: #0d0d0d;
@@ -85,7 +86,8 @@ input[type="password"] {
 
     input[type="text"]:focus,
     input[type="email"]:focus,
-    input[type="password"]:focus {
+    input[type="password"]:focus,
+    input[type="tel"]:focus {
         background-color: #fff;
         border-bottom: 2px solid #5fbae9;
     }

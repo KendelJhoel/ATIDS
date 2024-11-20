@@ -5,51 +5,104 @@
 }
 
 <h2 class="text-center mb-4" style="color: #44997e; font-weight: bold;">Editar Auto</h2>
+<div class="d-flex">
 
-<form asp-action="Edit" method="post" class="p-5 shadow-lg rounded bg-light mx-auto" style="max-width: 600px;">
-    <input type="hidden" asp-for="IdAuto" />
-
-    <div class="form-group mb-3">
-        <label asp-for="Marca" class="control-label" style="font-weight: 500; color: #444;">Marca</label>
-        <input asp-for="Marca" class="form-control" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;" />
-        <span asp-validation-for="Marca" class="text-danger"></span>
+    <div class="card shadow-lg me-4" style="width: 18rem;">
+        <img id="previewImage" src="/images/@Model.Imagen" class="card-img-top" alt="Imagen del Auto">
+        <div class="card-body text-center">
+            <h5 class="card-title">Imagen Actual</h5>
+            <div class="form-group">
+                <label for="nuevaImagen" class="btn btn-primary mt-3">Seleccionar Imagen</label>
+                <input type="file" id="nuevaImagen" class="form-control d-none">
+            </div>
+        </div>
     </div>
 
-    <div class="form-group mb-3">
-        <label asp-for="Modelo" class="control-label" style="font-weight: 500; color: #444;">Modelo</label>
-        <input asp-for="Modelo" class="form-control" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;" />
-        <span asp-validation-for="Modelo" class="text-danger"></span>
-    </div>
+    <!-- Formulario existente -->
+    <form asp-action="Editar" method="post" class="p-5 shadow-lg rounded bg-light mx-auto" style="max-width: 600px;">
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="IdAuto" />
+        <input type="hidden" asp-for="Newimagen" id="newImageName" />
+        <input type="hidden" asp-for="Imagen" />
 
-    <div class="form-group mb-3">
-        <label asp-for="Placa" class="control-label" style="font-weight: 500; color: #444;">Placa</label>
-        <input asp-for="Placa" class="form-control" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;" />
-        <span asp-validation-for="Placa" class="text-danger"></span>
-    </div>
+        <div class="form-group mb-3">
+            <label asp-for="Marca" class="control-label" style="font-weight: 500; color: #444;">Marca</label>
+            <input asp-for="Marca" class="form-control" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;" />
+            <span asp-validation-for="Marca" class="text-danger"></span>
+        </div>
 
-    <div class="form-group mb-3">
-        <label asp-for="Tipo" class="control-label" style="font-weight: 500; color: #444;">Tipo</label>
-        <input asp-for="Tipo" class="form-control" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;" />
-        <span asp-validation-for="Tipo" class="text-danger"></span>
-    </div>
+        <div class="form-group mb-3">
+            <label asp-for="Modelo" class="control-label" style="font-weight: 500; color: #444;">Modelo</label>
+            <input asp-for="Modelo" class="form-control" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;" />
+            <span asp-validation-for="Modelo" class="text-danger"></span>
+        </div>
 
-    <div class="form-group mb-3">
-        <label asp-for="Estado" class="control-label" style="font-weight: 500; color: #444;">Estado</label>
-        <select asp-for="Estado" class="form-control" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;">
-            <option value="Disponible">Disponible</option>
-            <option value="No Disponible">No Disponible</option>
-        </select>
-        <span asp-validation-for="Estado" class="text-danger"></span>
-    </div>
+        <div class="form-group mb-3">
+            <label asp-for="Placa" class="control-label" style="font-weight: 500; color: #444;">Placa</label>
+            <input asp-for="Placa" class="form-control" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;" />
+            <span asp-validation-for="Placa" class="text-danger"></span>
+        </div>
 
-    <div class="form-group mb-3">
-        <label asp-for="CostoDia" class="control-label" style="font-weight: 500; color: #444;">Costo por Día $</label>
-        <input asp-for="CostoDia" class="form-control" type="number" step="0.01" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;" />
-        <span asp-validation-for="CostoDia" class="text-danger"></span>
-    </div>
+        <div class="form-group mb-3">
+            <label asp-for="Tipo" class="control-label" style="font-weight: 500; color: #444;">Tipo</label>
+            <input asp-for="Tipo" class="form-control" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;" />
+            <span asp-validation-for="Tipo" class="text-danger"></span>
+        </div>
 
-    <div class="d-flex justify-content-center mt-4">
-        <button type="submit" class="btn" style="background-color: #44997e; color: white; font-weight: bold; padding: 10px 20px; border-radius: 8px; border: none;">Guardar Cambios</button>
-        <a asp-action="Index" class="btn btn-secondary ms-3" style="border-radius: 8px; font-weight: bold; padding: 10px 20px;">Cancelar</a>
-    </div>
-</form>
+        <div class="form-group mb-3">
+            <label asp-for="Estado" class="control-label" style="font-weight: 500; color: #444;">Estado</label>
+            <select asp-for="Estado" class="form-control" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;">
+                <option value="Disponible">Disponible</option>
+                <option value="No Disponible">No Disponible</option>
+            </select>
+            <span asp-validation-for="Estado" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="CostoDia" class="control-label" style="font-weight: 500; color: #444;">Costo por Día $</label>
+            <input asp-for="CostoDia" class="form-control" type="number" step="0.01" required style="border-radius: 8px; border: 1px solid #ced4da; padding: 10px;" />
+            <span asp-validation-for="CostoDia" class="text-danger"></span>
+        </div>
+
+        <div class="d-flex justify-content-center mt-4">
+            <button type="submit" class="btn" style="background-color: #44997e; color: white; font-weight: bold; padding: 10px 20px; border-radius: 8px; border: none;">Guardar Cambios</button>
+            <a asp-action="Index" class="btn btn-secondary ms-3" style="border-radius: 8px; font-weight: bold; padding: 10px 20px;">Cancelar</a>
+        </div>
+    </form>
+</div>
+
+<script>
+    const newImageInput = document.getElementById('nuevaImagen');
+    const previewImage = document.getElementById('previewImage');
+    const newImageNameField = document.getElementById('newImageName');
+
+    newImageInput.addEventListener('change', async (event) => {
+        const [file] = event.target.files;
+        if (file) {
+            // Mostrar la previsualización de la nueva imagen
+            previewImage.src = URL.createObjectURL(file);
+
+            // Subir la imagen al servidor y obtener el nombre
+            const formData = new FormData();
+            formData.append('file', file);
+
+            try {
+                const response = await fetch('/Autos/UploadImage', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    // Asignar el nombre generado al campo oculto
+                    newImageNameField.value = result.fileName;
+                } else {
+                    alert('Error al subir la imagen: ' + result.message);
+                }
+            } catch (error) {
+                console.error('Error al subir la imagen:', error);
+            }
+        }
+    });
+</script>

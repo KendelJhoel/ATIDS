@@ -51,9 +51,21 @@
             <!-- frmRegistro -->
             <form id="signUpForm" method="post" asp-action="Register" style="display: none;">
                 <input type="text" id="name" class="fadeIn second" name="name" placeholder="Nombre Completo" required>
+                <input type="text" id="regDireccion" class="fadeIn second" name="direccion" placeholder="Dirección" required>
+
+                <input type="text" id="regNumber" name="telefono"
+                       class="fadeIn second"
+                       placeholder="Número de Teléfono"
+                       maxlength="9"
+                       required
+                       pattern="\d{4}-\d{4}"
+                       title="Debe ingresar un número en el formato ####-####">
+
                 <input type="email" id="regEmail" class="fadeIn second" name="email" placeholder="Correo Electrónico" required>
                 <input type="password" id="regPassword" class="fadeIn third" name="password" placeholder="Contraseña" required>
                 <input type="password" id="confirmPassword" class="fadeIn third" name="confirmPassword" placeholder="Confirmar Contraseña" required>
+                
+
                 <input type="submit" class="fadeIn fourth" value="Registrarse">
             </form>
 
@@ -69,28 +81,39 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- scripts para pestañas -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const signInTab = document.getElementById("signInTab");
-            const signUpTab = document.getElementById("signUpTab");
-            const signInForm = document.getElementById("signInForm");
-            const signUpForm = document.getElementById("signUpForm");
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const signInTab = document.getElementById("signInTab");
+        const signUpTab = document.getElementById("signUpTab");
+        const signInForm = document.getElementById("signInForm");
+        const signUpForm = document.getElementById("signUpForm");
 
-            // pestañas
-            signInTab.addEventListener("click", function () {
-                signInForm.style.display = "block";
-                signUpForm.style.display = "none";
-                signInTab.classList.add("active");
-                signUpTab.classList.remove("active");
-            });
-
-            signUpTab.addEventListener("click", function () {
-                signInForm.style.display = "none";
-                signUpForm.style.display = "block";
-                signUpTab.classList.add("active");
-                signInTab.classList.remove("active");
-            });
+        // pestañas
+        signInTab.addEventListener("click", function () {
+            signInForm.style.display = "block";
+            signUpForm.style.display = "none";
+            signInTab.classList.add("active");
+            signUpTab.classList.remove("active");
         });
-    </script>
+
+        signUpTab.addEventListener("click", function () {
+            signInForm.style.display = "none";
+            signUpForm.style.display = "block";
+            signUpTab.classList.add("active");
+            signInTab.classList.remove("active");
+        });
+
+        // Manejo del campo de teléfono
+        const phoneInput = document.getElementById("regNumber");
+        phoneInput.addEventListener("input", function () {
+            let value = phoneInput.value.replace(/\D/g, ""); // Eliminar caracteres no numéricos
+            if (value.length > 4) {
+                value = value.slice(0, 4) + "-" + value.slice(4); // Insertar el guion después de los primeros 4 dígitos
+            }
+            phoneInput.value = value.slice(0, 9); // Limitar a 9 caracteres
+        });
+    });
+</script>
+
 </body>
 </html>

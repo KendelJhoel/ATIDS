@@ -2,6 +2,7 @@
 using ParcialATIS.Models;
 using System;
 using System.Collections.Generic;
+using System.IO; // Para manejo de archivos
 using MySql.Data.MySqlClient;
 
 namespace ParcialATIS.Controllers
@@ -15,7 +16,7 @@ namespace ParcialATIS.Controllers
             _dbController = new DbController();
         }
 
-        // listar autos
+        // Listar autos (GET)
         public IActionResult Index()
         {
             var autos = new List<Auto>();
@@ -38,7 +39,8 @@ namespace ParcialATIS.Controllers
                             Placa = reader["placa"].ToString(),
                             Tipo = reader["tipo"].ToString(),
                             Estado = reader["estado"].ToString(),
-                            CostoDia = Convert.ToDouble(reader["costodia"])
+                            CostoDia = Convert.ToDouble(reader["costodia"]),
+                            Imagen = reader["imagen"].ToString() // Incluye la imagen
                         });
                     }
                 }
@@ -56,12 +58,33 @@ namespace ParcialATIS.Controllers
         // Crear auto (POST)
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Auto auto)
+        public IActionResult Create(Auto auto, IFormFile Imagen)
         {
+            if (Imagen != null && Imagen.Length > 0)
+            {
+                var uploads = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+                if (!Directory.Exists(uploads))
+                {
+                    Directory.CreateDirectory(uploads);
+                }
+                var filePath = Path.Combine(uploads, Imagen.FileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    Imagen.CopyTo(stream);
+                }
+
+                auto.Imagen = Imagen.FileName; // Guardar solo el nombre del archivo
+            }
+            else
+            {
+                auto.Imagen = "default.jpg"; // Imagen por defecto si no se carga ninguna
+            }
+
             using (var connection = _dbController.GetConnection())
             {
                 connection.Open();
-                string query = "INSERT INTO autos (marca, modelo, placa, tipo, estado, costodia) VALUES (@Marca, @Modelo, @Placa, @Tipo, @Estado, @CostoDia)";
+                string query = "INSERT INTO autos (marca, modelo, placa, tipo, estado, costodia, imagen) VALUES (@Marca, @Modelo, @Placa, @Tipo, @Estado, @CostoDia, @Imagen)";
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
                 cmd.Parameters.AddWithValue("@Marca", auto.Marca);
@@ -70,6 +93,7 @@ namespace ParcialATIS.Controllers
                 cmd.Parameters.AddWithValue("@Tipo", auto.Tipo);
                 cmd.Parameters.AddWithValue("@Estado", auto.Estado);
                 cmd.Parameters.AddWithValue("@CostoDia", auto.CostoDia);
+                cmd.Parameters.AddWithValue("@Imagen", auto.Imagen);
 
                 cmd.ExecuteNonQuery();
             }
@@ -80,6 +104,8 @@ namespace ParcialATIS.Controllers
         // Editar auto (GET)
         public IActionResult Editar(int id)
         {
+            Console.WriteLine($"Intentando cargar el auto con ID: {id}");
+
             Auto auto = null;
 
             using (var connection = _dbController.GetConnection())
@@ -101,25 +127,44 @@ namespace ParcialATIS.Controllers
                             Placa = reader["placa"].ToString(),
                             Tipo = reader["tipo"].ToString(),
                             Estado = reader["estado"].ToString(),
-                            CostoDia = Convert.ToDouble(reader["costodia"])
+                            CostoDia = Convert.ToDouble(reader["costodia"]),
+                            Imagen = reader["imagen"].ToString()
                         };
+
+                        Console.WriteLine("Auto encontrado.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("No se encontró ningún auto con ese ID.");
                     }
                 }
             }
 
-            return auto == null ? NotFound() : View("Editar", auto);
+            if (auto == null)
+            {
+                return NotFound("El auto especificado no existe.");
+            }
+
+            return View(auto);
         }
 
-
-        // Editar auto (POST)
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Auto auto)
+        public IActionResult Editar(Auto auto)
         {
+            if (string.IsNullOrEmpty(auto.Newimagen))
+            {
+                auto.Newimagen = auto.Imagen; // Si no hay nueva imagen, usa la actual
+            }
+
             using (var connection = _dbController.GetConnection())
             {
                 connection.Open();
-                string query = "UPDATE autos SET marca = @Marca, modelo = @Modelo, placa = @Placa, tipo = @Tipo, estado = @Estado, costodia = @CostoDia WHERE idauto = @Id";
+                string query = @"UPDATE autos 
+                         SET marca = @Marca, modelo = @Modelo, placa = @Placa, 
+                             tipo = @Tipo, estado = @Estado, costodia = @CostoDia, 
+                             imagen = @Imagen 
+                         WHERE idauto = @Id";
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
                 cmd.Parameters.AddWithValue("@Marca", auto.Marca);
@@ -128,12 +173,47 @@ namespace ParcialATIS.Controllers
                 cmd.Parameters.AddWithValue("@Tipo", auto.Tipo);
                 cmd.Parameters.AddWithValue("@Estado", auto.Estado);
                 cmd.Parameters.AddWithValue("@CostoDia", auto.CostoDia);
+                cmd.Parameters.AddWithValue("@Imagen", auto.Newimagen);
                 cmd.Parameters.AddWithValue("@Id", auto.IdAuto);
 
                 cmd.ExecuteNonQuery();
             }
 
             return RedirectToAction(nameof(Index));
+        }
+
+
+        [HttpPost]
+        public JsonResult UploadImage(IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+            {
+                return Json(new { success = false, message = "Archivo inválido" });
+            }
+
+            try
+            {
+                var uploads = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+                if (!Directory.Exists(uploads))
+                {
+                    Directory.CreateDirectory(uploads);
+                }
+
+                // Generar un nombre único para la imagen
+                var fileName = $"{Guid.NewGuid()}_{file.FileName}";
+                var filePath = Path.Combine(uploads, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                }
+
+                return Json(new { success = true, fileName });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
         }
 
         // Eliminar auto (GET)
@@ -151,11 +231,10 @@ namespace ParcialATIS.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-
+        // Crear auto (GET)
         public IActionResult Crear()
         {
             return View();
         }
-
     }
 }

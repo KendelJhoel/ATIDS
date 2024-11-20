@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ParcialATIS.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Clientes Disponibles";
+}
+
+<h2 class="text-center mb-4" style="color: #44997e; font-weight: bold;">Clientes Disponibles</h2>
+
+<table class="table table-striped shadow-sm rounded" style="overflow: hidden; border-radius: 10px;">
+    <thead class="text-white" style="background-color: #44997e;">
+        <tr>
+            <th>Nombre</th>
+            <th>Dirección</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+            <th>Opciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cliente in Model)
+        {
+            <tr>
+                <td>@cliente.Nombre</td>
+                <td>@cliente.Direccion</td>
+                <td>@cliente.Telefono</td>
+                <td>@cliente.Email</td>
+                <td>
+                    <a asp-action="Editar" asp-route-id="@cliente.IdCliente" class="btn btn-sm" style="background-color: #44997e; color: white; font-weight: bold;">Editar</a>
+                    <a asp-action="Eliminar" asp-route-id="@cliente.IdCliente" class="btn btn-sm btn-danger" onclick="return confirm('¿Estás seguro de que deseas eliminar este cliente?');" style="font-weight: bold;">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="text-end">
+    <a asp-action="Crear" asp-controller="Clientes" class="btn btn-sm" style="background-color: #28A745; color: white; font-weight: bold;">Agregar Cliente</a>
+</div>
+
+<hr />

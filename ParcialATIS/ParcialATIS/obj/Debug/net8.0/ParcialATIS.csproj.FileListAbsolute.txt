@@ -294,3 +294,4 @@ C:\Users\spaid\Desktop\PARCIAL\ParcialATIS\ParcialATIS\obj\Debug\net8.0\refint\P
 C:\Users\spaid\Desktop\PARCIAL\ParcialATIS\ParcialATIS\obj\Debug\net8.0\ParcialATIS.pdb
 C:\Users\spaid\Desktop\PARCIAL\ParcialATIS\ParcialATIS\obj\Debug\net8.0\ParcialATIS.genruntimeconfig.cache
 C:\Users\spaid\Desktop\PARCIAL\ParcialATIS\ParcialATIS\obj\Debug\net8.0\ref\ParcialATIS.dll
+C:\Users\spaid\Desktop\PARCIAL\ParcialATIS\ParcialATIS\obj\Debug\net8.0\ParcialATIS.sourcelink.json

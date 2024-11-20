@@ -6,6 +6,7 @@ using ParcialATIS.Models;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using static Mysqlx.Crud.Order.Types;
 
 namespace ParcialATIS.Controllers
 {
@@ -108,9 +109,8 @@ namespace ParcialATIS.Controllers
             return View();
         }
 
-        // Register (POST)
         [HttpPost]
-        public IActionResult Register(string name, string email, string password, string confirmPassword)
+        public IActionResult Register(string name, string direccion, string telefono, string email, string password, string confirmPassword)
         {
             if (password != confirmPassword)
             {
@@ -121,11 +121,14 @@ namespace ParcialATIS.Controllers
             using (var connection = _dbController.GetConnection())
             {
                 connection.Open();
-                string query = "INSERT INTO clientes (nombre, direccion, telefono, dui, email) VALUES (@Nombre, '', '', @Password, @Email)";
+                // La contraseña se almacena en el campo `dui`
+                string query = "INSERT INTO clientes (nombre, direccion, telefono, dui, email) VALUES (@Nombre, @Direccion, @Telefono, @Password, @Email)";
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
                 cmd.Parameters.AddWithValue("@Nombre", name);
-                cmd.Parameters.AddWithValue("@Password", password);
+                cmd.Parameters.AddWithValue("@Direccion", direccion);
+                cmd.Parameters.AddWithValue("@Telefono", telefono);
+                cmd.Parameters.AddWithValue("@Password", password); // Se almacena en el campo `dui`
                 cmd.Parameters.AddWithValue("@Email", email);
 
                 cmd.ExecuteNonQuery();
@@ -134,6 +137,7 @@ namespace ParcialATIS.Controllers
             ViewBag.Success = "Usuario registrado con éxito.";
             return View("Login");
         }
+
 
         // Logout (POST)
         [HttpPost]
