@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|c:\\users\\spaid\\desktop\\parcial\\parcialatis\\parcialatis\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|solutionrelative:parcialatis\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|c:\\users\\spaid\\desktop\\parcial\\parcialatis\\parcialatis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|solutionrelative:parcialatis\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|c:\\users\\spaid\\desktop\\parcial\\parcialatis\\parcialatis\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|solutionrelative:parcialatis\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|c:\\users\\spaid\\desktop\\parcial\\parcialatis\\parcialatis\\controllers\\facturascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|solutionrelative:parcialatis\\controllers\\facturascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|c:\\users\\spaid\\desktop\\parcial\\parcialatis\\parcialatis\\views\\clientes\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|solutionrelative:parcialatis\\views\\clientes\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|c:\\users\\spaid\\desktop\\parcial\\parcialatis\\parcialatis\\views\\facturas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|solutionrelative:parcialatis\\views\\facturas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|c:\\users\\spaid\\desktop\\parcial\\parcialatis\\parcialatis\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|solutionrelative:parcialatis\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|c:\\users\\spaid\\desktop\\parcial\\parcialatis\\parcialatis\\views\\facturas\\factura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|solutionrelative:parcialatis\\views\\facturas\\factura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|c:\\users\\spaid\\desktop\\parcial\\parcialatis\\parcialatis\\models\\auto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|solutionrelative:parcialatis\\models\\auto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|c:\\users\\spaid\\desktop\\parcial\\parcialatis\\parcialatis\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C399A7B3-619F-4A31-B8CC-8A676477EA6A}|ParcialATIS\\ParcialATIS.csproj|solutionrelative:parcialatis\\models\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,73 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "ParcialATIS\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "ParcialATIS\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAwHQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-20T07:43:17.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Models\\Cliente.cs",
-              "RelativeDocumentMoniker": "ParcialATIS\\Models\\Cliente.cs",
-              "ToolTip": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Models\\Cliente.cs",
-              "RelativeToolTip": "ParcialATIS\\Models\\Cliente.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAABkAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T07:21:53.867Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Auto.cs",
-              "DocumentMoniker": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Models\\Auto.cs",
-              "RelativeDocumentMoniker": "ParcialATIS\\Models\\Auto.cs",
-              "ToolTip": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Models\\Auto.cs",
-              "RelativeToolTip": "ParcialATIS\\Models\\Auto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T07:16:40.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClientesController.cs",
-              "DocumentMoniker": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Controllers\\ClientesController.cs",
-              "RelativeDocumentMoniker": "ParcialATIS\\Controllers\\ClientesController.cs",
-              "ToolTip": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Controllers\\ClientesController.cs",
-              "RelativeToolTip": "ParcialATIS\\Controllers\\ClientesController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAAEQAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T07:07:11.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Editar.cshtml",
-              "DocumentMoniker": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Views\\Clientes\\Editar.cshtml",
-              "RelativeDocumentMoniker": "ParcialATIS\\Views\\Clientes\\Editar.cshtml",
-              "ToolTip": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Views\\Clientes\\Editar.cshtml",
-              "RelativeToolTip": "ParcialATIS\\Views\\Clientes\\Editar.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAwEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-20T07:06:50.732Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -112,6 +47,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ParcialATIS\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ParcialATIS\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAuwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T17:41:54.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Views\\Facturas\\Index.cshtml",
+              "RelativeDocumentMoniker": "ParcialATIS\\Views\\Facturas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Views\\Facturas\\Index.cshtml",
+              "RelativeToolTip": "ParcialATIS\\Views\\Facturas\\Index.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T17:31:57.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Factura.cshtml",
+              "DocumentMoniker": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Views\\Facturas\\Factura.cshtml",
+              "RelativeDocumentMoniker": "ParcialATIS\\Views\\Facturas\\Factura.cshtml",
+              "ToolTip": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Views\\Facturas\\Factura.cshtml*",
+              "RelativeToolTip": "ParcialATIS\\Views\\Facturas\\Factura.cshtml*",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwB8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T17:31:46.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Models\\Factura.cs",
+              "RelativeDocumentMoniker": "ParcialATIS\\Models\\Factura.cs",
+              "ToolTip": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Models\\Factura.cs",
+              "RelativeToolTip": "ParcialATIS\\Models\\Factura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T17:28:20.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FacturasController.cs",
+              "DocumentMoniker": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Controllers\\FacturasController.cs",
+              "RelativeDocumentMoniker": "ParcialATIS\\Controllers\\FacturasController.cs",
+              "ToolTip": "C:\\Users\\spaid\\Desktop\\PARCIAL\\ParcialATIS\\ParcialATIS\\Controllers\\FacturasController.cs",
+              "RelativeToolTip": "ParcialATIS\\Controllers\\FacturasController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAA8wFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T17:27:27.431Z",
+              "EditorCaption": ""
             }
           ]
         },

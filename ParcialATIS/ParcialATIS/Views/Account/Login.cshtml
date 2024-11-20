@@ -80,8 +80,9 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- scripts para pestañas -->
+    
 <script>
+    //scripts para pestañas
     document.addEventListener("DOMContentLoaded", function () {
         const signInTab = document.getElementById("signInTab");
         const signUpTab = document.getElementById("signUpTab");
@@ -103,14 +104,14 @@
             signInTab.classList.remove("active");
         });
 
-        // Manejo del campo de teléfono
+        // campo de teléfono
         const phoneInput = document.getElementById("regNumber");
         phoneInput.addEventListener("input", function () {
-            let value = phoneInput.value.replace(/\D/g, ""); // Eliminar caracteres no numéricos
+            let value = phoneInput.value.replace(/\D/g, ""); 
             if (value.length > 4) {
-                value = value.slice(0, 4) + "-" + value.slice(4); // Insertar el guion después de los primeros 4 dígitos
+                value = value.slice(0, 4) + "-" + value.slice(4); 
             }
-            phoneInput.value = value.slice(0, 9); // Limitar a 9 caracteres
+            phoneInput.value = value.slice(0, 9); 
         });
     });
 </script>

@@ -8,7 +8,7 @@
         public int? IdEmpleado { get; set; }
         public DateTime? Fecha { get; set; }
         public double? Subtotal { get; set; }
-        public double? Iva { get; set; }
+        public double? IVA { get; set; }
         public double? Total { get; set; }
     }
 }

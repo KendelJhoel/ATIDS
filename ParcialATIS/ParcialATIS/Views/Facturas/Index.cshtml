@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Factura>
+
+@{
+    ViewData["Title"] = "Facturas";
+}
+
+<h2>Lista de Facturas</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID Factura</th>
+            <th>Cliente</th>
+            <th>Auto</th>
+            <th>Empleado</th>
+            <th>Fecha</th>
+            <th>Subtotal</th>
+            <th>IVA</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var factura in Model)
+        {
+            <tr>
+                <td>@factura.IdFactura</td>
+                <td>@factura.IdCliente</td>
+                <td>@factura.IdAuto</td>
+                <td>@factura.IdEmpleado</td>
+                <td>@factura.Fecha?.ToString("dd/MM/yyyy")</td>
+                <td>@factura.Subtotal?.ToString("C")</td>
+                <td>@factura.IVA?.ToString("C")</td>
+                <td>@factura.Total?.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>
