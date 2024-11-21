@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5WaWV3XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Autos/autosD.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3NcYXV0b3NELmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Autos/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3NcQ3JlYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,12 +42,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Autos/Renta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3NcUmVudGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Clientes/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Clientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Facturas/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYXNcRGV0YWxsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Facturas/Factura.cshtml]

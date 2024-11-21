@@ -1,37 +1,105 @@
-﻿@model Factura
+﻿@model ParcialATIS.Models.Factura
 
 @{
     ViewData["Title"] = "Facturación";
 }
 
-<h2 class="text-center">Facturación</h2>
+<div class="container mt-5">
+    <!-- Información del Cliente -->
+    <div class="card shadow-lg p-4 mb-4">
+        <h3 class="text-primary">Información del Cliente</h3>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td><strong>Nombre:</strong></td>
+                    <td>@ViewBag.ClienteNombre</td>
+                </tr>
+                <tr>
+                    <td><strong>Correo Electrónico:</strong></td>
+                    <td>@ViewBag.ClienteEmail</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-<form asp-action="Crear" method="post" class="form-horizontal">
-    <div class="form-group">
-        <label>Fecha</label>
-        <input type="date" name="fecha" class="form-control" required />
+    <!-- Información del Auto -->
+    <div class="card shadow-lg p-4 mb-4">
+        <div class="row">
+            <!-- Imagen del auto -->
+            <div class="col-md-4 text-center">
+                <img src="~/images/@Model.Imagen" class="img-fluid rounded" alt="@Model.Marca @Model.Modelo">
+            </div>
+            <!-- Detalles del auto -->
+            <div class="col-md-8">
+                <h3 class="text-primary">@Model.Marca @Model.Modelo</h3>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><strong>Placa:</strong></td>
+                            <td>@Model.Placa</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tipo:</strong></td>
+                            <td>@Model.Tipo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Costo por Día:</strong></td>
+                            <td>$@Model.CostoDia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Subtotal:</strong></td>
+                            <td id="subtotal">$0.00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>IVA (13%):</strong></td>
+                            <td id="iva">$0.00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total:</strong></td>
+                            <td id="total">$0.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <label>Cliente</label>
-        <select name="idCliente" class="form-control">
-            @foreach (var cliente in ViewBag.Clientes)
-            {
-                <option value="@cliente.IdCliente">@cliente.Nombre</option>
-            }
-        </select>
+
+    <!-- Formulario de Facturación -->
+    <div class="card shadow-lg p-4">
+        <h2 class="text-center mb-4">Facturación</h2>
+        <form method="post" action="/Facturas/Guardar">
+            <input type="hidden" name="IdAuto" value="@Model.IdAuto">
+            <input type="hidden" name="Subtotal" id="hiddenSubtotal">
+            <input type="hidden" name="IVA" id="hiddenIVA">
+            <input type="hidden" name="Total" id="hiddenTotal">
+            <div class="mb-3">
+                <label for="cantidadDias" class="form-label">Cantidad de días a rentar</label>
+                <input type="number" class="form-control" id="cantidadDias" name="CantidadDias" min="1" placeholder="Ingrese la cantidad de días" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Calcular y Generar Factura</button>
+        </form>
     </div>
-    <div class="form-group">
-        <label>Auto</label>
-        <select name="idAuto" class="form-control">
-            @foreach (var auto in ViewBag.Autos)
-            {
-                <option value="@auto.IdAuto">@auto.Marca</option>
-            }
-        </select>
-    </div>
-    <div class="form-group">
-        <label>Cantidad de días a rentar</label>
-        <input type="number" name="dias" class="form-control" min="1" required />
-    </div>
-    <button type="submit" class="btn btn-primary mt-3">Generar</button>
-</form>
+</div>
+
+<script>
+    document.getElementById('cantidadDias').addEventListener('input', function () {
+        const dias = parseInt(this.value) || 0;
+        if (dias < 1) {
+            alert("La cantidad de días debe ser mayor a 0.");
+            return;
+        }
+        const costoDia = @Model.CostoDia ?? 0;
+
+        const subtotal = dias * costoDia;
+        const iva = subtotal * 0.13;
+        const total = subtotal + iva;
+
+        document.getElementById('subtotal').innerText = `$${subtotal.toFixed(2)}`;
+        document.getElementById('iva').innerText = `$${iva.toFixed(2)}`;
+        document.getElementById('total').innerText = `$${total.toFixed(2)}`;
+
+        document.getElementById('hiddenSubtotal').value = subtotal.toFixed(2);
+        document.getElementById('hiddenIVA').value = iva.toFixed(2);
+        document.getElementById('hiddenTotal').value = total.toFixed(2);
+    });
+</script>

@@ -6,14 +6,13 @@ using ParcialATIS.Models;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using static Mysqlx.Crud.Order.Types;
 
 namespace ParcialATIS.Controllers
 {
     public class AccountController : Controller
     {
         private const string AdminEmail = "admin@admin";
-        private const string AdminPassword = "adpsswrd";
+        private const string AdminPassword = "adps";
         private readonly DbController _dbController;
 
         public AccountController()
@@ -31,7 +30,7 @@ namespace ParcialATIS.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(string email, string password)
         {
-            // vldr admin
+            // Validar admin
             if (email == AdminEmail && password == AdminPassword)
             {
                 var claims = new List<Claim>
@@ -53,28 +52,11 @@ namespace ParcialATIS.Controllers
                 return RedirectToAction("Index", "AdminView");
             }
 
-            // cliente existe (sí, no) en bd
+            // Validar cliente en la base de datos
             using (var connection = _dbController.GetConnection())
             {
                 connection.Open();
 
-                string checkUserQuery = "SELECT * FROM clientes WHERE email = @Email";
-                MySqlCommand checkUserCmd = new MySqlCommand(checkUserQuery, connection);
-                checkUserCmd.Parameters.AddWithValue("@Email", email);
-
-                using (var reader = checkUserCmd.ExecuteReader())
-                {
-                    if (!reader.HasRows)
-                    {
-                        ViewBag.Error = "El usuario no está registrado.";
-                        return View();
-                    }
-                }
-
-                connection.Close();
-                connection.Open();
-
-                // valdr las credenciales
                 string credentialsQuery = "SELECT * FROM clientes WHERE email = @Email AND dui = @Password";
                 MySqlCommand credentialsCmd = new MySqlCommand(credentialsQuery, connection);
                 credentialsCmd.Parameters.AddWithValue("@Email", email);
@@ -84,6 +66,10 @@ namespace ParcialATIS.Controllers
                 {
                     if (reader.Read())
                     {
+                        // Guardar ClienteId en la sesión
+                        int clienteId = Convert.ToInt32(reader["idcliente"]);
+                        HttpContext.Session.SetInt32("ClienteId", clienteId);
+
                         var claims = new List<Claim>
                         {
                             new Claim(ClaimTypes.Name, reader["nombre"].ToString()),
@@ -138,16 +124,13 @@ namespace ParcialATIS.Controllers
             return View("Login");
         }
 
-
         // Logout (POST)
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
+            HttpContext.Session.Clear(); // Limpiar la sesión
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Login", "Account");
         }
-
-
-
     }
 }

@@ -1,0 +1,38 @@
+﻿@model ParcialATIS.Models.Auto
+
+@{
+    ViewData["Title"] = "Detalles del Auto";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg p-4">
+        <div class="row">
+            <!-- Imagen del auto -->
+            <div class="col-md-6 text-center">
+                <img src="~/images/@Model.Imagen" class="img-fluid rounded" alt="@Model.Marca @Model.Modelo">
+            </div>
+            <!-- Detalles del auto -->
+            <div class="col-md-6">
+                <h2 class="text-primary">@Model.Marca @Model.Modelo</h2>
+                <hr />
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <strong>Placa:</strong> @Model.Placa
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Tipo:</strong> @Model.Tipo
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Costo por Día:</strong> $@Model.CostoDia
+                    </li>
+                </ul>
+                <hr />
+                <!-- Botón Rentar -->
+                <form method="get" action="/Facturas/Factura">
+                    <input type="hidden" name="idAuto" value="@Model.IdAuto" />
+                    <button type="submit" class="btn btn-success btn-lg w-100 mt-3">Rentar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

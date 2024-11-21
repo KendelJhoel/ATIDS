@@ -3,60 +3,68 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - @(User.IsInRole("Admin") ? "Panel de Administración" : "Bienvenido " + User.Identity.Name)</title>
+    <title>@ViewData["Title"] - @(User.Identity.IsAuthenticated ? (User.IsInRole("Admin") ? "Panel de Administración" : "Bienvenido " + User.Identity.Name) : "ParcialATIS")</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ParcialATIS.styles.css" asp-append-version="true" />
 </head>
 <body>
 
-    <!-- navbar -->
+    <!-- Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #44997e; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
             <div class="container">
                 <!-- Título dinámico con redirección -->
                 <a class="navbar-brand fw-bold"
                    asp-area=""
-                   asp-controller="@(User.IsInRole("Admin") ? "AdminView" : "Home")"
+                   asp-controller="@(User.Identity.IsAuthenticated && User.IsInRole("Admin") ? "AdminView" : "Home")"
                    asp-action="Index">
-                    @(User.IsInRole("Admin") ? "Panel de Administración" : "Bienvenido " + User.Identity.Name)
+                    @(User.Identity.IsAuthenticated ? (User.IsInRole("Admin") ? "Panel de Administración" : "Bienvenido " + User.Identity.Name) : "ParcialATIS")
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        @if (User.IsInRole("Admin"))
+                        @if (User.Identity.IsAuthenticated)
                         {
-                            <!-- opts administrador -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-white" href="#" id="crudDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    CRUD
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="crudDropdown">
-                                    <li><a class="dropdown-item" asp-area="" asp-controller="Autos" asp-action="Index">Vehículos</a></li>
-                                    <li><a class="dropdown-item" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a></li>
-                                    <li><a class="dropdown-item" asp-area="" asp-controller="Facturas" asp-action="Index">Facturas</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" asp-area="" asp-controller="Historial" asp-action="Index">Historial</a>
-                            </li>
+                            if (User.IsInRole("Admin"))
+                            {
+                                <!-- Opciones para el administrador -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" href="#" id="crudDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        CRUD
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="crudDropdown">
+                                        <li><a class="dropdown-item" asp-area="" asp-controller="Autos" asp-action="Index">Vehículos</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-controller="Facturas" asp-action="Index">Facturas</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-area="" asp-controller="Historial" asp-action="Index">Historial</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <!-- Opciones para clientes -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-area="" asp-controller="Autos" asp-action="autosD">Vehículos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-area="" asp-controller="Historial" asp-action="MiHistorial">Mi Historial</a>
+                                </li>
+                            }
+                            <!-- Opción de Cerrar Sesión como enlace -->
                             <li class="nav-item">
                                 <a class="nav-link text-white" asp-area="" asp-controller="Account" asp-action="Login">Cerrar Sesión</a>
                             </li>
                         }
                         else
                         {
-                            <!-- opts clientes -->
+                            <!-- Opciones para usuarios no autenticados -->
                             <li class="nav-item">
-                                <a class="nav-link text-white" asp-area="" asp-controller="Autos" asp-action="Index">Vehículos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" asp-area="" asp-controller="Historial" asp-action="MiHistorial">Mi Historial</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" asp-area="" asp-controller="Account" asp-action="Login">Cerrar Sesión</a>
+                                <a class="nav-link text-white" asp-area="" asp-controller="Account" asp-action="Login">Iniciar Sesión</a>
                             </li>
                         }
                     </ul>
@@ -65,6 +73,24 @@
         </nav>
     </header>
 
+    <!-- Mensajes flotantes -->
+    <div class="container mt-3">
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                @TempData["Success"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                @TempData["Error"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+    </div>
+
     <!-- Main Content -->
     <div class="container my-4">
         <main role="main" class="pb-3">
@@ -72,14 +98,14 @@
         </main>
     </div>
 
-    <!-- footer -->
+    <!-- Footer -->
     <footer class="text-white" style="background-color: #2e2e2e; padding: 20px 0;">
         <div class="container text-center">
             <span>&copy; 2024 - ParcialATIS - <a href="~/Home/Privacy" class="text-decoration-none" style="color: #44997e;">Privacidad</a></span>
         </div>
     </footer>
 
-    <!-- sripts -->
+    <!-- Scripts -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

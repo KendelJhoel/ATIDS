@@ -53,6 +53,14 @@
             "MySql.Data": {
               "target": "Package",
               "version": "[9.1.0, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.9, )"
+            },
+            "SkiaSharp.Views": {
+              "target": "Package",
+              "version": "[2.88.9, )"
             }
           },
           "imports": [

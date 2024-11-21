@@ -1,0 +1,168 @@
+﻿/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Títulos */
+h2, h3 {
+    font-weight: bold;
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+/* Recomendaciones */
+.uniform-image {
+    height: 600px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+    .uniform-image:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+/* Tabs */
+.nav-tabs .nav-link {
+    color: #007bff;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    .nav-tabs .nav-link.active {
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .nav-tabs .nav-link:hover {
+        color: #0056b3;
+    }
+
+/* Section */
+section {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+    section img {
+        width: 0;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 0.8;
+        transition: width 0.5s ease, opacity 0.5s ease, filter 0.5s ease, transform 0.3s ease;
+    }
+
+        section img:hover {
+            cursor: crosshair;
+            width: 400px;
+            opacity: 1;
+            filter: contrast(120%);
+            transform: scale(0.8);
+        }
+
+/* Texto No Disponible */
+.text-muted {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Todos los vehículos */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+        border-bottom: 1px solid #ddd;
+        height: 400px;
+        object-fit: scale-down;
+        width: 100%;
+        border-radius: 10px;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+        .card img:hover {
+            transform: scale(0.9);
+        }
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+    }
+
+/* Carousel */
+.carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: brightness(0) invert(1);
+}
+

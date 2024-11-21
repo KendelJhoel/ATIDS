@@ -1,0 +1,40 @@
+﻿@model ParcialATIS.Models.Factura
+
+@{
+    ViewData["Title"] = "Detalle de Factura";
+}
+
+<h1>Detalle de Factura</h1>
+
+<table class="table">
+    <tr>
+        <th>ID Factura</th>
+        <td>@Model.IdFactura</td>
+    </tr>
+    <tr>
+        <th>Fecha</th>
+        <td>@Model.Fecha?.ToShortDateString()</td>
+    </tr>
+    <tr>
+        <th>Cliente</th>
+        <td>@Model.Cliente (@Model.Correo)</td>
+    </tr>
+    <tr>
+        <th>Vehículo</th>
+        <td>@Model.Marca @Model.Modelo (@Model.Placa) - @Model.Tipo</td>
+    </tr>
+    <tr>
+        <th>Subtotal</th>
+        <td>$@Model.Subtotal?.ToString("F2")</td>
+    </tr>
+    <tr>
+        <th>IVA (13%)</th>
+        <td>$@Model.IVA?.ToString("F2")</td>
+    </tr>
+    <tr>
+        <th>Total</th>
+        <td>$@Model.Total?.ToString("F2")</td>
+    </tr>
+</table>
+
+<a class="btn btn-secondary" asp-action="Index">Volver</a>

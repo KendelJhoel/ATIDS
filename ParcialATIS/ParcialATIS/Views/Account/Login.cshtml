@@ -11,7 +11,6 @@
     <title>@ViewBag.Title</title>
     <!-- login.css -->
     <link rel="stylesheet" href="~/css/login.css" />
-
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 </head>
 <body style="background-color: #56baed;">
@@ -27,7 +26,7 @@
                 <img src="~/images/login_icon.png" id="icon" alt="Icono de Usuario" />
             </div>
 
-            <!-- error o éxito -->
+            <!-- Mensajes de error o éxito -->
             @if (!string.IsNullOrEmpty(ViewBag.Error as string))
             {
                 <div class="alert alert-danger fadeIn">
@@ -41,14 +40,14 @@
                 </div>
             }
 
-            <!-- frmLogin -->
+            <!-- Formulario de Login -->
             <form id="signInForm" method="post" asp-action="Login" style="display: block;">
                 <input type="email" id="loginEmail" class="fadeIn second" name="email" placeholder="Correo Electrónico" required>
                 <input type="password" id="loginPassword" class="fadeIn third" name="password" placeholder="Contraseña" required>
                 <input type="submit" class="fadeIn fourth" value="Iniciar Sesión">
             </form>
 
-            <!-- frmRegistro -->
+            <!-- Formulario de Registro -->
             <form id="signUpForm" method="post" asp-action="Register" style="display: none;">
                 <input type="text" id="name" class="fadeIn second" name="name" placeholder="Nombre Completo" required>
                 <input type="text" id="regDireccion" class="fadeIn second" name="direccion" placeholder="Dirección" required>
@@ -64,8 +63,6 @@
                 <input type="email" id="regEmail" class="fadeIn second" name="email" placeholder="Correo Electrónico" required>
                 <input type="password" id="regPassword" class="fadeIn third" name="password" placeholder="Contraseña" required>
                 <input type="password" id="confirmPassword" class="fadeIn third" name="confirmPassword" placeholder="Confirmar Contraseña" required>
-                
-
                 <input type="submit" class="fadeIn fourth" value="Registrarse">
             </form>
 
@@ -76,45 +73,43 @@
         </div>
     </div>
 
-    <!-- esenciales -->
+    <!-- Scripts esenciales -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    
-<script>
-    //scripts para pestañas
-    document.addEventListener("DOMContentLoaded", function () {
-        const signInTab = document.getElementById("signInTab");
-        const signUpTab = document.getElementById("signUpTab");
-        const signInForm = document.getElementById("signInForm");
-        const signUpForm = document.getElementById("signUpForm");
+    <script>
+        // Scripts para pestañas
+        document.addEventListener("DOMContentLoaded", function () {
+            const signInTab = document.getElementById("signInTab");
+            const signUpTab = document.getElementById("signUpTab");
+            const signInForm = document.getElementById("signInForm");
+            const signUpForm = document.getElementById("signUpForm");
 
-        // pestañas
-        signInTab.addEventListener("click", function () {
-            signInForm.style.display = "block";
-            signUpForm.style.display = "none";
-            signInTab.classList.add("active");
-            signUpTab.classList.remove("active");
+            // Alternar entre pestañas
+            signInTab.addEventListener("click", function () {
+                signInForm.style.display = "block";
+                signUpForm.style.display = "none";
+                signInTab.classList.add("active");
+                signUpTab.classList.remove("active");
+            });
+
+            signUpTab.addEventListener("click", function () {
+                signInForm.style.display = "none";
+                signUpForm.style.display = "block";
+                signUpTab.classList.add("active");
+                signInTab.classList.remove("active");
+            });
+
+            // Validar el formato del teléfono
+            const phoneInput = document.getElementById("regNumber");
+            phoneInput.addEventListener("input", function () {
+                let value = phoneInput.value.replace(/\D/g, ""); 
+                if (value.length > 4) {
+                    value = value.slice(0, 4) + "-" + value.slice(4); 
+                }
+                phoneInput.value = value.slice(0, 9); 
+            });
         });
-
-        signUpTab.addEventListener("click", function () {
-            signInForm.style.display = "none";
-            signUpForm.style.display = "block";
-            signUpTab.classList.add("active");
-            signInTab.classList.remove("active");
-        });
-
-        // campo de teléfono
-        const phoneInput = document.getElementById("regNumber");
-        phoneInput.addEventListener("input", function () {
-            let value = phoneInput.value.replace(/\D/g, ""); 
-            if (value.length > 4) {
-                value = value.slice(0, 4) + "-" + value.slice(4); 
-            }
-            phoneInput.value = value.slice(0, 9); 
-        });
-    });
-</script>
-
+    </script>
 </body>
 </html>

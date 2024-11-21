@@ -19,6 +19,11 @@ namespace ParcialATIS.Controllers
         // Listar autos (GET)
         public IActionResult Index()
         {
+            if (!User.Identity.IsAuthenticated || (User.IsInRole("Admin") == false && HttpContext.Session.GetInt32("ClienteId") == null))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             var autos = new List<Auto>();
 
             using (var connection = _dbController.GetConnection())
@@ -104,7 +109,10 @@ namespace ParcialATIS.Controllers
         // Editar auto (GET)
         public IActionResult Editar(int id)
         {
-            Console.WriteLine($"Intentando cargar el auto con ID: {id}");
+            if (!User.Identity.IsAuthenticated || (User.IsInRole("Admin") == false && HttpContext.Session.GetInt32("ClienteId") == null))
+            {
+                return RedirectToAction("Login", "Account");
+            }
 
             Auto auto = null;
 
@@ -130,12 +138,6 @@ namespace ParcialATIS.Controllers
                             CostoDia = Convert.ToDouble(reader["costodia"]),
                             Imagen = reader["imagen"].ToString()
                         };
-
-                        Console.WriteLine("Auto encontrado.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("No se encontró ningún auto con ese ID.");
                     }
                 }
             }
@@ -181,7 +183,6 @@ namespace ParcialATIS.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-
 
         [HttpPost]
         public JsonResult UploadImage(IFormFile file)
@@ -231,10 +232,87 @@ namespace ParcialATIS.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
         // Crear auto (GET)
         public IActionResult Crear()
         {
             return View();
+        }
+
+        public IActionResult autosD()
+        {
+            var clienteId = HttpContext.Session.GetInt32("ClienteId");
+            if (clienteId == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            var autosDisponibles = new List<Auto>();
+
+            using (var connection = _dbController.GetConnection())
+            {
+                connection.Open();
+                string query = "SELECT * FROM autos WHERE estado = 'Disponible'";
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        autosDisponibles.Add(new Auto
+                        {
+                            IdAuto = Convert.ToInt32(reader["idauto"]),
+                            Marca = reader["marca"].ToString(),
+                            Modelo = reader["modelo"].ToString(),
+                            Placa = reader["placa"].ToString(),
+                            Tipo = reader["tipo"].ToString(),
+                            Estado = reader["estado"].ToString(),
+                            CostoDia = Convert.ToDouble(reader["costodia"]),
+                            Imagen = reader["imagen"].ToString()
+                        });
+                    }
+                }
+            }
+
+            return View(autosDisponibles);
+        }
+
+        public IActionResult Renta(int id)
+        {
+            Auto auto = null;
+
+            using (var connection = _dbController.GetConnection())
+            {
+                connection.Open();
+                string query = "SELECT * FROM autos WHERE idauto = @Id";
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@Id", id);
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        auto = new Auto
+                        {
+                            IdAuto = Convert.ToInt32(reader["idauto"]),
+                            Marca = reader["marca"].ToString(),
+                            Modelo = reader["modelo"].ToString(),
+                            Placa = reader["placa"].ToString(),
+                            Tipo = reader["tipo"].ToString(),
+                            Estado = reader["estado"].ToString(),
+                            CostoDia = Convert.ToDouble(reader["costodia"]),
+                            Imagen = reader["imagen"].ToString()
+                        };
+                    }
+                }
+            }
+
+            if (auto == null)
+            {
+                return NotFound("El auto no existe o no está disponible.");
+            }
+
+            return View(auto);
         }
     }
 }

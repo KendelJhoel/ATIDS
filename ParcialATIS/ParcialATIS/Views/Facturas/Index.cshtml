@@ -1,22 +1,20 @@
-﻿@model IEnumerable<Factura>
+﻿@model List<ParcialATIS.Models.Factura>
 
 @{
-    ViewData["Title"] = "Facturas";
+    ViewData["Title"] = "Facturas - Administración";
 }
 
-<h2>Lista de Facturas</h2>
+<h1>Facturas</h1>
 
-<table class="table table-striped">
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>ID Factura</th>
-            <th>Cliente</th>
-            <th>Auto</th>
-            <th>Empleado</th>
             <th>Fecha</th>
-            <th>Subtotal</th>
-            <th>IVA</th>
+            <th>Cliente</th>
+            <th>Vehículo</th>
             <th>Total</th>
+            <th>Acciones</th>
         </tr>
     </thead>
     <tbody>
@@ -24,13 +22,16 @@
         {
             <tr>
                 <td>@factura.IdFactura</td>
-                <td>@factura.IdCliente</td>
-                <td>@factura.IdAuto</td>
-                <td>@factura.IdEmpleado</td>
-                <td>@factura.Fecha?.ToString("dd/MM/yyyy")</td>
-                <td>@factura.Subtotal?.ToString("C")</td>
-                <td>@factura.IVA?.ToString("C")</td>
-                <td>@factura.Total?.ToString("C")</td>
+                <td>@factura.Fecha?.ToShortDateString()</td>
+                <td>@factura.Cliente</td>
+                <td>@factura.Marca @factura.Modelo (@factura.Placa)</td>
+                <td>$@factura.Total?.ToString("F2")</td>
+                <td>
+                    <a class="btn btn-info btn-sm" asp-action="Detalle" asp-route-id="@factura.IdFactura">Ver</a>
+                    <form method="post" asp-action="Eliminar" asp-route-id="@factura.IdFactura" class="d-inline">
+                        <button class="btn btn-danger btn-sm" type="submit" onclick="return confirm('¿Estás seguro de eliminar esta factura?');">Eliminar</button>
+                    </form>
+                </td>
             </tr>
         }
     </tbody>

@@ -6,6 +6,10 @@
 
 <h2 class="text-center mb-4" style="color: #44997e; font-weight: bold;">Autos Disponibles</h2>
 
+<div class="text-end">
+    <a asp-action="Crear" asp-controller="Autos" class="btn btn-sm" style="background-color: #28A745; color: white; font-weight: bold;">Agregar Auto</a>
+</div>
+
 <table class="table table-striped shadow-sm rounded" style="overflow: hidden; border-radius: 10px;">
     <thead class="text-white" style="background-color: #44997e;">
         <tr>
@@ -28,7 +32,7 @@
                 <td>@auto.Placa</td>
                 <td>@auto.Tipo</td>
                 <td>@auto.Estado</td>
-                <td>@auto.CostoDia?.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-US"))</td>
+                <td>@auto.CostoDia.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-US"))</td>
                 <td>
                     <a asp-action="Editar" asp-route-id="@auto.IdAuto" class="btn btn-sm" style="background-color: #44997e; color: white; font-weight: bold;">Editar</a>
                     <a asp-action="Delete" asp-route-id="@auto.IdAuto" class="btn btn-sm btn-danger" onclick="return confirm('¿Estás seguro de que deseas eliminar este auto?');" style="font-weight: bold;">Eliminar</a>
@@ -37,9 +41,5 @@
         }
     </tbody>
 </table>
-
-<div class="text-end">
-    <a asp-action="Crear" asp-controller="Autos" class="btn btn-sm" style="background-color: #28A745; color: white; font-weight: bold;">Agregar Auto</a>
-</div>
 
 <hr />
