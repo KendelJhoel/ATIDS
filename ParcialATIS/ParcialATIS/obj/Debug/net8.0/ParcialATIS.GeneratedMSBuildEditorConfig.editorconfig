@@ -9,87 +9,91 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ParcialATIS
 build_property.RootNamespace = ParcialATIS
-build_property.ProjectDir = C:\Users\spaid\Desktop\PARCIAL\ParcialATIS\ParcialATIS\
+build_property.ProjectDir = C:\Users\Admin\Desktop\GitHub\ATIDS\ParcialATIS\ParcialATIS\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\spaid\Desktop\PARCIAL\ParcialATIS\ParcialATIS
+build_property.MSBuildProjectDirectory = C:\Users\Admin\Desktop\GitHub\ATIDS\ParcialATIS\ParcialATIS
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Account/Login.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/AdminView/Index.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/AdminView/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5WaWV3XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Autos/autosD.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Autos/autosD.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3NcYXV0b3NELmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Autos/Crear.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Autos/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3NcQ3JlYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Autos/Editar.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Autos/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3NcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Autos/Index.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Autos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Autos/Renta.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Autos/Renta.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b3NcUmVudGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Clientes/Editar.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Clientes/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Clientes/Index.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Clientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Facturas/Detalle.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Devoluciones/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2b2x1Y2lvbmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Facturas/Detalle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYXNcRGV0YWxsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Facturas/Factura.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Facturas/Factura.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYXNcRmFjdHVyYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Facturas/Index.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Facturas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Home/Index.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Home/Privacy.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Shared/Error.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/_ViewImports.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/_ViewStart.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/spaid/Desktop/PARCIAL/ParcialATIS/ParcialATIS/Views/Shared/_Layout.cshtml]
+[C:/Users/Admin/Desktop/GitHub/ATIDS/ParcialATIS/ParcialATIS/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-k0c9kiedq5

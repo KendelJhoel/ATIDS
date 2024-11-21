@@ -1,0 +1,48 @@
+﻿@model IEnumerable<ParcialATIS.Models.Alquilado>
+
+<h2>Clientes con Autos Rentados</h2>
+<select id="selectClientes">
+    <option value="">Seleccione un cliente</option>
+    @foreach (var alquiler in Model)
+    {
+        <option value="@alquiler.IdAlquiler"
+                data-auto="@alquiler.IdAuto"
+                data-fecha="@alquiler.Fecha"
+                data-fechaDevolver="@alquiler.FechaDevolver">
+            Cliente @alquiler.IdCliente - Auto @alquiler.IdAuto
+        </option>
+    }
+</select>
+
+<div id="detallesAuto" style="display: none;">
+    <h3>Detalles del Auto</h3>
+    <p>Auto ID: <span id="autoId"></span></p>
+    <p>Fecha de Renta: <span id="fecha"></span></p>
+    <p>Fecha de Devolución: <span id="fechaDevolver"></span></p>
+    <button id="btnDevolver">Devolver</button>
+</div>
+
+<script>
+    $('#selectClientes').on('change', function () {
+        const alquilerId = $(this).val();
+        if (alquilerId) {
+            const selectedOption = $(this).find('option:selected');
+            $('#autoId').text(selectedOption.data('auto'));
+            $('#fecha').text(selectedOption.data('fecha'));
+            $('#fechaDevolver').text(selectedOption.data('fechaDevolver'));
+            $('#detallesAuto').show();
+        } else {
+            $('#detallesAuto').hide();
+        }
+    });
+
+    $('#btnDevolver').on('click', function () {
+        const alquilerId = $('#selectClientes').val();
+        if (alquilerId) {
+            $.post('/Alquilados/Devolver', { idAlquiler: alquilerId }, function () {
+                alert('Auto devuelto con éxito.');
+                location.reload();
+            });
+        }
+    });
+</script>
