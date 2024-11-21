@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "J4+SOoq7F0YZz6NxYP8GYL19Kfa8TgCFkwNOaFDAebU=",
+  "Hash": "fwZPtBpPGdSWuNA5uyF6Ob2pc0rrkizCsrtE9H0/anc=",
   "Source": "ParcialATIS",
   "BasePath": "_content/ParcialATIS",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ParcialATIS\\wwwroot",
       "Source": "ParcialATIS",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ParcialATIS.styles.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ParcialATIS.styles.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "ParcialATIS.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ParcialATIS.styles.css"
+      "OriginalItemSpec": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ParcialATIS.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ParcialATIS.bundle.scp.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ParcialATIS.bundle.scp.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "ParcialATIS.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ParcialATIS.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ParcialATIS.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\css\\autosD.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\css\\autosD.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "css/autosD.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\autosD.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\css\\login.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\css\\login.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "css/login.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\css\\navbar.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\css\\navbar.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "css/navbar.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\navbar.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\css\\site.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\favicon.ico",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\005a5dbc-0c02-4f45-ab3b-7613df3a8dbe_Accord2.jpeg",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\005a5dbc-0c02-4f45-ab3b-7613df3a8dbe_Accord2.jpeg",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/005a5dbc-0c02-4f45-ab3b-7613df3a8dbe_Accord2.jpeg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\images\\005a5dbc-0c02-4f45-ab3b-7613df3a8dbe_Accord2.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\1500.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\1500.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/1500.png",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1500.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\6ba52f0e-d771-4a47-9aa4-3142611dce31_R.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\6ba52f0e-d771-4a47-9aa4-3142611dce31_R.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/6ba52f0e-d771-4a47-9aa4-3142611dce31_R.png",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6ba52f0e-d771-4a47-9aa4-3142611dce31_R.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\90dafc32-3bfe-4239-98e2-00c4dbdc20ce_R.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\90dafc32-3bfe-4239-98e2-00c4dbdc20ce_R.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/90dafc32-3bfe-4239-98e2-00c4dbdc20ce_R.png",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\90dafc32-3bfe-4239-98e2-00c4dbdc20ce_R.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\a0acdbbc-8bfa-4090-b01f-43a5408e28c3_R.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\a0acdbbc-8bfa-4090-b01f-43a5408e28c3_R.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/a0acdbbc-8bfa-4090-b01f-43a5408e28c3_R.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\a0acdbbc-8bfa-4090-b01f-43a5408e28c3_R.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\aecead02-ca11-45fd-b210-6a5fd8c38307_corolla.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\aecead02-ca11-45fd-b210-6a5fd8c38307_corolla.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/aecead02-ca11-45fd-b210-6a5fd8c38307_corolla.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\aecead02-ca11-45fd-b210-6a5fd8c38307_corolla.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\amarok.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\amarok.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/amarok.png",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\amarok.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\auto1.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\auto1.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/auto1.png",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\auto1.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\auto2.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\auto2.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/auto2.png",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\auto2.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\auto3.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\auto3.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/auto3.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\auto3.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\autos.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\autos.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/autos.png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\autos.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\bt50.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\bt50.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/bt50.png",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bt50.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\civic.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\civic.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/civic.png",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\civic.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\clientes.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\clientes.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/clientes.png",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\clientes.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\colorado.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\colorado.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/colorado.png",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\images\\colorado.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\corolla.jfif",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\corolla.jfif",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/corolla.jfif",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\images\\corolla.jfif"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\cx5.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\cx5.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/cx5.png",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cx5.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\dmax.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\dmax.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/dmax.png",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\images\\dmax.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\elantra.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\elantra.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/elantra.png",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\images\\elantra.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\explorer.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\explorer.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/explorer.png",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\images\\explorer.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\fiesta.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\fiesta.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/fiesta.png",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\images\\fiesta.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\fit.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\fit.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/fit.png",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\images\\fit.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\frontier.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\frontier.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/frontier.png",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\images\\frontier.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\fusion.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\fusion.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/fusion.png",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\images\\fusion.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\gle.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\gle.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/gle.png",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gle.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\golf.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\golf.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/golf.png",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\images\\golf.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\hilux.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\hilux.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/hilux.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\images\\hilux.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\Honda Accord.jpeg",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\Honda Accord.jpeg",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/Honda Accord.jpeg",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Honda Accord.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\i30.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\i30.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/i30.png",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\images\\i30.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\jetta.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\jetta.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/jetta.png",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\images\\jetta.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\l200.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\l200.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/l200.png",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\images\\l200.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\login_icon.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\login_icon.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/login_icon.png",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\images\\login_icon.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\logo.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\logo.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/logo.png",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\malibu.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\malibu.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/malibu.png",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\images\\malibu.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\mazda3.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\mazda3.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/mazda3.png",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mazda3.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\model3.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\model3.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/model3.png",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\images\\model3.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\optima.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\optima.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/optima.png",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\images\\optima.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\outback.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\outback.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/outback.png",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\images\\outback.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\passat.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\passat.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/passat.png",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\images\\passat.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\q7.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\q7.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/q7.png",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\images\\q7.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\ranger.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\ranger.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/ranger.png",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ranger.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\ridgeline.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\ridgeline.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/ridgeline.png",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ridgeline.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\riohatchback.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\riohatchback.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/riohatchback.png",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\images\\riohatchback.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\sentra.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\sentra.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/sentra.png",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sentra.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\spark.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\spark.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/spark.png",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\images\\spark.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\sportage.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\sportage.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/sportage.png",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sportage.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\tahoe.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\tahoe.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/tahoe.png",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\images\\tahoe.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\tucson.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\tucson.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/tucson.png",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\images\\tucson.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\versa.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\versa.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/versa.png",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\images\\versa.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\wrangler.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\wrangler.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/wrangler.png",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\images\\wrangler.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\x5.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\x5.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/x5.png",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\x5.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\yaris.png",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\images\\yaris.png",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "images/yaris.png",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\images\\yaris.png"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\js\\site.js",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1708,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1727,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1746,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1765,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1784,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1803,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1822,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1841,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1860,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1879,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1898,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1917,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1936,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1974,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1993,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2031,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2050,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2069,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2088,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2107,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2126,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2145,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2164,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2183,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2202,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2221,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "ParcialATIS",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Admin\\Desktop\\GitHub\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\",
       "BasePath": "_content/ParcialATIS",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

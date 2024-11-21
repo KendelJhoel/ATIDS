@@ -16,7 +16,6 @@ namespace ParcialATIS.Controllers
         }
 
         [HttpPost]
-        [HttpPost]
         public IActionResult Guardar(int cantidadDias, int idAuto)
         {
             var clienteId = HttpContext.Session.GetInt32("ClienteId");
@@ -81,7 +80,7 @@ namespace ParcialATIS.Controllers
 
                 // Insertar factura en la base de datos
                 string queryFactura = @"INSERT INTO facturas (idcliente, idauto, fecha, subtotal, iva, total) 
-                                 VALUES (@IdCliente, @IdAuto, @Fecha, @Subtotal, @IVA, @Total)";
+                                VALUES (@IdCliente, @IdAuto, @Fecha, @Subtotal, @IVA, @Total)";
                 MySqlCommand cmdFactura = new MySqlCommand(queryFactura, connection);
                 cmdFactura.Parameters.AddWithValue("@IdCliente", clienteId);
                 cmdFactura.Parameters.AddWithValue("@IdAuto", idAuto);
@@ -90,16 +89,19 @@ namespace ParcialATIS.Controllers
                 cmdFactura.Parameters.AddWithValue("@IVA", factura.IVA);
                 cmdFactura.Parameters.AddWithValue("@Total", factura.Total);
                 cmdFactura.ExecuteNonQuery();
+
+                // Obtener el ID de la factura recién creada
                 factura.IdFactura = (int)cmdFactura.LastInsertedId;
 
                 // Insertar en la tabla alquilados
-                string queryAlquilado = @"INSERT INTO alquilados (idauto, idcliente, fecha, fecha_devolver) 
-                                  VALUES (@IdAuto, @IdCliente, @Fecha, @FechaDevolver)";
+                string queryAlquilado = @"INSERT INTO alquilados (idauto, idcliente, fecha, fecha_devolver, idfactura) 
+                                  VALUES (@IdAuto, @IdCliente, @Fecha, @FechaDevolver, @IdFactura)";
                 MySqlCommand cmdAlquilado = new MySqlCommand(queryAlquilado, connection);
                 cmdAlquilado.Parameters.AddWithValue("@IdAuto", idAuto);
                 cmdAlquilado.Parameters.AddWithValue("@IdCliente", clienteId);
                 cmdAlquilado.Parameters.AddWithValue("@Fecha", DateTime.Now);
-                cmdAlquilado.Parameters.AddWithValue("@FechaDevolver", DateTime.Now.AddDays(cantidadDias)); // Fecha de devolución estimada
+                cmdAlquilado.Parameters.AddWithValue("@FechaDevolver", DateTime.Now.AddDays(cantidadDias));
+                cmdAlquilado.Parameters.AddWithValue("@IdFactura", factura.IdFactura); // Asociar el ID de la factura
                 cmdAlquilado.ExecuteNonQuery();
 
                 // Actualizar estado del vehículo a "No disponible"
@@ -107,6 +109,16 @@ namespace ParcialATIS.Controllers
                 MySqlCommand updateAutoCmd = new MySqlCommand(updateAutoQuery, connection);
                 updateAutoCmd.Parameters.AddWithValue("@IdAuto", idAuto);
                 updateAutoCmd.ExecuteNonQuery();
+
+                // Insertar en historial
+                string insertQuery = @"
+                    INSERT INTO historial (id_factura, id_auto, id_cliente, estado_auto, fecha)
+                    VALUES (@IdFactura, @IdAuto, @IdCliente, 'Rentó un auto', NOW())";
+                MySqlCommand insertCmd = new MySqlCommand(insertQuery, connection);
+                insertCmd.Parameters.AddWithValue("@IdFactura", factura.IdFactura);
+                insertCmd.Parameters.AddWithValue("@IdAuto", idAuto);
+                insertCmd.Parameters.AddWithValue("@IdCliente", clienteId);
+                insertCmd.ExecuteNonQuery();
             }
 
             // Generar recibo
@@ -122,6 +134,7 @@ namespace ParcialATIS.Controllers
             Response.Headers.Add("Content-Disposition", $"attachment; filename={cliente.Nombre}_Factura_{factura.IdFactura}.png");
             return File(recibo.ToArray(), "image/png");
         }
+
 
 
 

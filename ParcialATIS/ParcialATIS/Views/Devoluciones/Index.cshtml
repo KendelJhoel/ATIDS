@@ -1,67 +1,99 @@
 ﻿@model ParcialATIS.Models.DevolucionViewModel
 
 @{
-    ViewData["Title"] = "Devolución de Auto";
+    ViewData["Title"] = "Devolución de Autos";
 }
 
 <div class="container mt-5">
-    <h2>Devolución de Auto</h2>
+    <h2>Devolución de Autos</h2>
     <hr />
-    <form method="post" action="/Devolucion/Devolver">
-        <div class="form-group">
-            <label for="cliente">Seleccionar Cliente:</label>
-            <select class="form-control" name="clienteId" id="cliente">
-                <option value="">Seleccione un cliente</option>
 
-                <!-- Aquí se verifica si hay clientes disponibles -->
-                @if (Model.Clientes != null && Model.Clientes.Any())
-                {
-                    @foreach (var cliente in Model.Clientes)
-                    {
-                        <option value="@cliente.IdCliente">@cliente.Nombre</option>
-                    }
-                }
-                else
-                {
-                    <option value="">No hay clientes disponibles</option>
-                }
-            </select>
-        </div>
+    <!-- Pestañas -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#tabDevolucion" data-bs-toggle="tab">Devolución</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#tabHistorial" data-bs-toggle="tab">Historial General</a>
+        </li>
+    </ul>
 
-        <!-- Aquí se mostrarán los autos alquilados del cliente seleccionado -->
-        <div id="autosContainer" style="display:none;">
+    <!-- Contenido de pestañas -->
+    <div class="tab-content mt-3">
+        <!-- Pestaña Devolución -->
+        <div class="tab-pane fade show active" id="tabDevolucion">
             <div class="form-group">
-                <label for="auto">Seleccionar Auto a Devolver:</label>
-                <select class="form-control" name="idAuto" id="auto">
-                    <option value="">Seleccione un auto</option>
-                    @foreach (var auto in Model.AutosAlquilados)
+                <label for="cliente">Seleccionar Cliente:</label>
+                <select class="form-control" name="clienteId" id="cliente">
+                    <option value="">Seleccione un cliente</option>
+                    @if (Model.Clientes != null && Model.Clientes.Any())
                     {
-                        <option value="@auto.IdAuto">@auto.Marca @auto.Modelo (@auto.Placa)</option>
+                        @foreach (var cliente in Model.Clientes)
+                        {
+                            <option value="@cliente.IdCliente">@cliente.Nombre</option>
+                        }
+                    }
+                    else
+                    {
+                        <option value="">No hay clientes disponibles</option>
                     }
                 </select>
             </div>
+
+            <div id="autosContainer" style="display:none;">
+                <div class="form-group">
+                    <label for="auto">Seleccionar Auto a Devolver:</label>
+                    <select class="form-control" id="auto">
+                        <option value="">Seleccione un auto</option>
+                    </select>
+                </div>
+                <button class="btn btn-danger mt-3" id="devolverBtn" style="display:none;">Devolver Auto</button>
+            </div>
         </div>
 
-        <input type="hidden" name="clienteId" value="@Model.ClienteId" />
-        <button type="submit" class="btn btn-success mt-3" id="devolverBtn" style="display:none;">Devolver Auto</button>
-    </form>
+        <!-- Pestaña Historial -->
+        <div class="tab-pane fade" id="tabHistorial">
+            <h4>Historial</h4>
+            <table class="table table-bordered" id="historialTable">
+                <thead>
+                    <tr>
+                        <th>ID Factura</th>
+                        <th>Auto</th>
+                        <th>Cliente</th>
+                        <th>Estado</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Historial)
+                    {
+                        <tr>
+                            <td>@item.IdFactura</td>
+                            <td>@item.Auto</td>
+                            <td>@item.NombreCliente</td>
+                            <td>@item.Estado</td>
+                            <td>@item.dFecha.ToString("dd/MM/yyyy")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
 </div>
 
 <script>
-    // Usamos JavaScript para cargar los autos alquilados cuando se selecciona un cliente
     document.getElementById("cliente").addEventListener("change", function () {
         var clienteId = this.value;
 
-        // Si el cliente ha sido seleccionado
         if (clienteId) {
-            // Realizamos una solicitud AJAX para obtener los autos alquilados por ese cliente
-            fetch(`/Devolucion/ObtenerAutosAlquilados?clienteId=${clienteId}`)
+            fetch(`/Alquilado/ObtenerAutosAlquilados?clienteId=${clienteId}`)
                 .then(response => response.json())
                 .then(data => {
                     var autosSelect = document.getElementById("auto");
-                    autosSelect.innerHTML = "<option value=''>Seleccione un auto</option>"; // Limpiamos el select de autos
+                    autosSelect.innerHTML = "<option value=''>Seleccione un auto</option>";
 
-                    // Rellenamos el select con los autos alquilados
                     data.forEach(auto => {
                         var option = document.createElement("option");
                         option.value = auto.idAuto;
@@ -69,7 +101,6 @@
                         autosSelect.appendChild(option);
                     });
 
-                    // Mostramos el contenedor de autos y el botón para devolver
                     document.getElementById("autosContainer").style.display = "block";
                     document.getElementById("devolverBtn").style.display = "inline-block";
                 })
@@ -77,9 +108,55 @@
                     console.error("Error al obtener los autos alquilados:", error);
                 });
         } else {
-            // Si no se ha seleccionado un cliente, ocultamos los autos y el botón
             document.getElementById("autosContainer").style.display = "none";
             document.getElementById("devolverBtn").style.display = "none";
         }
     });
+
+    document.getElementById("devolverBtn").addEventListener("click", function () {
+        var clienteId = document.getElementById("cliente").value;
+        var autoId = document.getElementById("auto").value;
+
+        if (clienteId && autoId) {
+            fetch(`/Devoluciones/Devolucion?clienteId=${clienteId}&idAuto=${autoId}`, {
+                method: "POST"
+            })
+                .then(response => {
+                    if (response.ok) {
+                        alert("El auto ha sido devuelto con éxito.");
+                        window.location.reload();
+                    } else {
+                        alert("Hubo un error al devolver el auto.");
+                    }
+                })
+                .catch(error => {
+                    console.error("Error al procesar la devolución:", error);
+                });
+        } else {
+            alert("Por favor, seleccione un cliente y un auto para continuar.");
+        }
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch('/Historial/ObtenerHistorialAdmin')
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector("#historialTable tbody");
+                tableBody.innerHTML = ""; // Limpiar contenido
+
+                data.forEach(item => {
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                        <td>${item.idFactura}</td>
+                        <td>${item.auto}</td>
+                        <td>${item.nombreCliente}</td>
+                        <td>${item.estado}</td>
+                        <td>${new Date(item.fecha).toLocaleDateString()}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error("Error al cargar el historial:", error));
+    });
+
 </script>
