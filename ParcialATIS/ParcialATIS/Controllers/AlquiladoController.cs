@@ -14,99 +14,114 @@ namespace ParcialATIS.Controllers
             _dbController = new DbController();
         }
 
-        public IActionResult Index()
+
+        public IActionResult Devolucion()
         {
-            var alquileres = new List<Alquilado>();
+            var clientesConAutosAlquilados = new List<Cliente>();
 
             using (var connection = _dbController.GetConnection())
             {
                 connection.Open();
                 string query = @"
-                    SELECT a.idalquiler, a.idauto, a.idcliente, a.idempleado, a.idfactura, a.fecha, a.fecha_devolver, c.nombre, au.marca, au.modelo
-                    FROM alquilados a
-                    JOIN clientes c ON a.idcliente = c.idcliente
-                    JOIN autos au ON a.idauto = au.idauto
-                    WHERE au.estado = 'No disponible'";
+                    SELECT DISTINCT c.idcliente, c.nombre
+                    FROM clientes c
+                    JOIN alquilados a ON c.idcliente = a.idcliente";
+
+
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
                 using (var reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        alquileres.Add(new Alquilado
+                        clientesConAutosAlquilados.Add(new Cliente
                         {
-                            IdAlquiler = Convert.ToInt32(reader["idalquiler"]),
-                            IdAuto = Convert.ToInt32(reader["idauto"]),
                             IdCliente = Convert.ToInt32(reader["idcliente"]),
-                            IdEmpleado = Convert.ToInt32(reader["idempleado"]),
-                            IdFactura = Convert.ToInt32(reader["idfactura"]),
-                            Fecha = Convert.ToDateTime(reader["fecha"]),
-                            FechaDevolver = Convert.ToDateTime(reader["fecha_devolver"])
+                            Nombre = reader["nombre"].ToString()
                         });
                     }
                 }
             }
 
-            return View(alquileres);
+            // Asegúrate de pasar los clientes correctamente al ViewModel
+            var viewModel = new DevolucionViewModel
+            {
+                Clientes = clientesConAutosAlquilados,
+                AutosAlquilados = new List<Auto>() // Esto puede actualizarse luego con AJAX
+            };
+
+            return View(viewModel); // Pasamos el ViewModel con las listas llenas
         }
 
-        // Registrar devolución (POST)
-        [HttpPost]
-        public IActionResult Devolver(int idAlquiler)
+
+        public IActionResult SeleccionarCliente(int clienteId)
         {
+            var autosAlquilados = new List<Auto>();
+
             using (var connection = _dbController.GetConnection())
             {
                 connection.Open();
+                string query = @"SELECT a.idauto, a.marca, a.modelo, a.placa, a.tipo, a.estado
+                         FROM autos a
+                         JOIN alquilados al ON a.idauto = al.idauto
+                         WHERE al.idcliente = @IdCliente AND al.estado = 'Alquilado'"; // Solo los autos alquilados
 
-                // Actualizar estado del auto
-                string updateAutoQuery = @"
-                    UPDATE autos
-                    SET estado = 'Disponible'
-                    WHERE idauto = (SELECT idauto FROM alquilados WHERE idalquiler = @IdAlquiler)";
-                MySqlCommand updateAutoCmd = new MySqlCommand(updateAutoQuery, connection);
-                updateAutoCmd.Parameters.AddWithValue("@IdAlquiler", idAlquiler);
-                updateAutoCmd.ExecuteNonQuery();
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@IdCliente", clienteId);
 
-                // Eliminar el registro de la tabla alquilados
-                string deleteAlquilerQuery = "DELETE FROM alquilados WHERE idalquiler = @IdAlquiler";
-                MySqlCommand deleteAlquilerCmd = new MySqlCommand(deleteAlquilerQuery, connection);
-                deleteAlquilerCmd.Parameters.AddWithValue("@IdAlquiler", idAlquiler);
-                deleteAlquilerCmd.ExecuteNonQuery();
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        autosAlquilados.Add(new Auto
+                        {
+                            IdAuto = Convert.ToInt32(reader["idauto"]),
+                            Marca = reader["marca"].ToString(),
+                            Modelo = reader["modelo"].ToString(),
+                            Placa = reader["placa"].ToString(),
+                            Tipo = reader["tipo"].ToString(),
+                            Estado = reader["estado"].ToString()
+                        });
+                    }
+                }
             }
 
-            return RedirectToAction("Index");
+            ViewBag.ClienteId = clienteId; // Guardamos el clienteId para la acción de devolución
+            return View(autosAlquilados); // Pasamos los autos alquilados a la vista
         }
 
+        public IActionResult ObtenerAutosAlquilados(int clienteId)
+        {
+            var autosAlquilados = new List<Auto>();
 
-        //[HttpPost]
-        //public IActionResult RentarAuto(int idAuto, int idCliente, int idEmpleado, int idFactura, DateTime fecha, DateTime fechaDevolver)
-        //{
-        //    using (var connection = _dbController.GetConnection())
-        //    {
-        //        connection.Open();
-        //        string query = @"
-        //    INSERT INTO alquilados (idauto, idcliente, idempleado, idfactura, fecha, fecha_devolver)
-        //    VALUES (@IdAuto, @IdCliente, @IdEmpleado, @IdFactura, @Fecha, @FechaDevolver)";
-        //        MySqlCommand cmd = new MySqlCommand(query, connection);
-        //        cmd.Parameters.AddWithValue("@IdAuto", idAuto);
-        //        cmd.Parameters.AddWithValue("@IdCliente", idCliente);
-        //        cmd.Parameters.AddWithValue("@IdEmpleado", idEmpleado);
-        //        cmd.Parameters.AddWithValue("@IdFactura", idFactura);
-        //        cmd.Parameters.AddWithValue("@Fecha", fecha);
-        //        cmd.Parameters.AddWithValue("@FechaDevolver", fechaDevolver);
+            using (var connection = _dbController.GetConnection())
+            {
+                connection.Open();
+                string query = @"SELECT a.idauto, a.marca, a.modelo, a.placa
+                         FROM autos a
+                         JOIN alquilados al ON a.idauto = al.idauto
+                         WHERE al.idcliente = @IdCliente AND al.estado = 'Alquilado'"; // Solo los autos alquilados
 
-        //        cmd.ExecuteNonQuery();
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@IdCliente", clienteId);
 
-        //        // Actualizar estado del auto
-        //        string updateAutoQuery = "UPDATE autos SET estado = 'No disponible' WHERE idauto = @IdAuto";
-        //        MySqlCommand updateAutoCmd = new MySqlCommand(updateAutoQuery, connection);
-        //        updateAutoCmd.Parameters.AddWithValue("@IdAuto", idAuto);
-        //        updateAutoCmd.ExecuteNonQuery();
-        //    }
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        autosAlquilados.Add(new Auto
+                        {
+                            IdAuto = Convert.ToInt32(reader["idauto"]),
+                            Marca = reader["marca"].ToString(),
+                            Modelo = reader["modelo"].ToString(),
+                            Placa = reader["placa"].ToString()
+                        });
+                    }
+                }
+            }
 
-        //    return RedirectToAction("Index", "Alquilados");
-        //}
-         
+            return Json(autosAlquilados); // Devolvemos los datos en formato JSON para ser procesados en la vista
+        }
 
     }
 }

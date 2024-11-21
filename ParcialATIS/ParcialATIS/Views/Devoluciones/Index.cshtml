@@ -1,48 +1,85 @@
-﻿@model IEnumerable<ParcialATIS.Models.Alquilado>
+﻿@model ParcialATIS.Models.DevolucionViewModel
 
-<h2>Clientes con Autos Rentados</h2>
-<select id="selectClientes">
-    <option value="">Seleccione un cliente</option>
-    @foreach (var alquiler in Model)
-    {
-        <option value="@alquiler.IdAlquiler"
-                data-auto="@alquiler.IdAuto"
-                data-fecha="@alquiler.Fecha"
-                data-fechaDevolver="@alquiler.FechaDevolver">
-            Cliente @alquiler.IdCliente - Auto @alquiler.IdAuto
-        </option>
-    }
-</select>
+@{
+    ViewData["Title"] = "Devolución de Auto";
+}
 
-<div id="detallesAuto" style="display: none;">
-    <h3>Detalles del Auto</h3>
-    <p>Auto ID: <span id="autoId"></span></p>
-    <p>Fecha de Renta: <span id="fecha"></span></p>
-    <p>Fecha de Devolución: <span id="fechaDevolver"></span></p>
-    <button id="btnDevolver">Devolver</button>
+<div class="container mt-5">
+    <h2>Devolución de Auto</h2>
+    <hr />
+    <form method="post" action="/Devolucion/Devolver">
+        <div class="form-group">
+            <label for="cliente">Seleccionar Cliente:</label>
+            <select class="form-control" name="clienteId" id="cliente">
+                <option value="">Seleccione un cliente</option>
+
+                <!-- Aquí se verifica si hay clientes disponibles -->
+                @if (Model.Clientes != null && Model.Clientes.Any())
+                {
+                    @foreach (var cliente in Model.Clientes)
+                    {
+                        <option value="@cliente.IdCliente">@cliente.Nombre</option>
+                    }
+                }
+                else
+                {
+                    <option value="">No hay clientes disponibles</option>
+                }
+            </select>
+        </div>
+
+        <!-- Aquí se mostrarán los autos alquilados del cliente seleccionado -->
+        <div id="autosContainer" style="display:none;">
+            <div class="form-group">
+                <label for="auto">Seleccionar Auto a Devolver:</label>
+                <select class="form-control" name="idAuto" id="auto">
+                    <option value="">Seleccione un auto</option>
+                    @foreach (var auto in Model.AutosAlquilados)
+                    {
+                        <option value="@auto.IdAuto">@auto.Marca @auto.Modelo (@auto.Placa)</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        <input type="hidden" name="clienteId" value="@Model.ClienteId" />
+        <button type="submit" class="btn btn-success mt-3" id="devolverBtn" style="display:none;">Devolver Auto</button>
+    </form>
 </div>
 
 <script>
-    $('#selectClientes').on('change', function () {
-        const alquilerId = $(this).val();
-        if (alquilerId) {
-            const selectedOption = $(this).find('option:selected');
-            $('#autoId').text(selectedOption.data('auto'));
-            $('#fecha').text(selectedOption.data('fecha'));
-            $('#fechaDevolver').text(selectedOption.data('fechaDevolver'));
-            $('#detallesAuto').show();
-        } else {
-            $('#detallesAuto').hide();
-        }
-    });
+    // Usamos JavaScript para cargar los autos alquilados cuando se selecciona un cliente
+    document.getElementById("cliente").addEventListener("change", function () {
+        var clienteId = this.value;
 
-    $('#btnDevolver').on('click', function () {
-        const alquilerId = $('#selectClientes').val();
-        if (alquilerId) {
-            $.post('/Alquilados/Devolver', { idAlquiler: alquilerId }, function () {
-                alert('Auto devuelto con éxito.');
-                location.reload();
-            });
+        // Si el cliente ha sido seleccionado
+        if (clienteId) {
+            // Realizamos una solicitud AJAX para obtener los autos alquilados por ese cliente
+            fetch(`/Devolucion/ObtenerAutosAlquilados?clienteId=${clienteId}`)
+                .then(response => response.json())
+                .then(data => {
+                    var autosSelect = document.getElementById("auto");
+                    autosSelect.innerHTML = "<option value=''>Seleccione un auto</option>"; // Limpiamos el select de autos
+
+                    // Rellenamos el select con los autos alquilados
+                    data.forEach(auto => {
+                        var option = document.createElement("option");
+                        option.value = auto.idAuto;
+                        option.textContent = `${auto.marca} ${auto.modelo} (${auto.placa})`;
+                        autosSelect.appendChild(option);
+                    });
+
+                    // Mostramos el contenedor de autos y el botón para devolver
+                    document.getElementById("autosContainer").style.display = "block";
+                    document.getElementById("devolverBtn").style.display = "inline-block";
+                })
+                .catch(error => {
+                    console.error("Error al obtener los autos alquilados:", error);
+                });
+        } else {
+            // Si no se ha seleccionado un cliente, ocultamos los autos y el botón
+            document.getElementById("autosContainer").style.display = "none";
+            document.getElementById("devolverBtn").style.display = "none";
         }
     });
 </script>
