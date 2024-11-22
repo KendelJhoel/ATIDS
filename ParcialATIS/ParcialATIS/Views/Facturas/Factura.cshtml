@@ -4,6 +4,8 @@
     ViewData["Title"] = "Facturación";
 }
 
+<link rel="stylesheet" href="/css/FacturasFactura.css">
+
 <div class="container mt-5">
     <!-- Información del Cliente -->
     <div class="card shadow-lg p-4 mb-4">
@@ -66,18 +68,23 @@
 
     <!-- Formulario de Facturación -->
     <div class="card shadow-lg p-4">
-        <h2 class="text-center mb-4">Facturación</h2>
-        <form method="post" action="/Facturas/Guardar">
-            <input type="hidden" name="IdAuto" value="@Model.IdAuto">
-            <input type="hidden" name="Subtotal" id="hiddenSubtotal">
-            <input type="hidden" name="IVA" id="hiddenIVA">
-            <input type="hidden" name="Total" id="hiddenTotal">
-            <div class="mb-3">
-                <label for="cantidadDias" class="form-label">Cantidad de días a rentar</label>
-                <input type="number" class="form-control" id="cantidadDias" name="CantidadDias" min="1" placeholder="Ingrese la cantidad de días" required>
-            </div>
-            <button type="submit" class="btn btn-success w-100">Calcular y Generar Factura</button>
-        </form>
+    <h2 class="text-center mb-4">Facturación</h2>
+    <form method="post" action="/Facturas/Guardar" id="facturaForm">
+        <input type="hidden" name="IdAuto" value="@Model.IdAuto">
+        <input type="hidden" name="Subtotal" id="hiddenSubtotal">
+        <input type="hidden" name="IVA" id="hiddenIVA">
+        <input type="hidden" name="Total" id="hiddenTotal">
+        <div class="mb-3">
+            <label for="cantidadDias" class="form-label">Cantidad de días a rentar</label>
+            <input type="number" class="form-control" id="cantidadDias" name="CantidadDias" min="1" placeholder="Ingrese la cantidad de días" required>
+        </div>
+        <button type="submit" class="btn btn-success w-100" id="calcularButton">Calcular y Generar Factura</button>
+    </form>
+
+    <button class="btn btn-primary w-100 mt-3" id="regresarButton" style="display: none;" onclick="window.location.href='/Home/Index';">
+        Regresar al Inicio
+    </button>
+
     </div>
 </div>
 
@@ -102,4 +109,14 @@
         document.getElementById('hiddenIVA').value = iva.toFixed(2);
         document.getElementById('hiddenTotal').value = total.toFixed(2);
     });
+
+        document.getElementById('facturaForm').addEventListener('submit', function (event) {
+        const calcularButton = document.getElementById('calcularButton');
+        calcularButton.disabled = true;
+        calcularButton.innerText = 'Renta exitosa';
+
+        const regresarButton = document.getElementById('regresarButton');
+        regresarButton.style.display = 'block';
+    });
+
 </script>

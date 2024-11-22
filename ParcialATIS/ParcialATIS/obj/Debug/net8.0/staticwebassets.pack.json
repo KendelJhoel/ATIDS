@@ -5,6 +5,22 @@
       "PackagePath": "staticwebassets\\ParcialATIS.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\css\\FacturasFactura.css",
+      "PackagePath": "staticwebassets\\css\\FacturasFactura.css"
+    },
+    {
+      "Id": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\css\\IndexAutos.css",
+      "PackagePath": "staticwebassets\\css\\IndexAutos.css"
+    },
+    {
+      "Id": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\css\\IndexFacturas.css",
+      "PackagePath": "staticwebassets\\css\\IndexFacturas.css"
+    },
+    {
+      "Id": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\css\\RentaAutos.css",
+      "PackagePath": "staticwebassets\\css\\RentaAutos.css"
+    },
+    {
       "Id": "C:\\Users\\spaid\\Desktop\\ATIDS\\ParcialATIS\\ParcialATIS\\wwwroot\\css\\autosD.css",
       "PackagePath": "staticwebassets\\css\\autosD.css"
     },

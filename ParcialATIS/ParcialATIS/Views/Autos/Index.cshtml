@@ -4,14 +4,26 @@
     ViewData["Title"] = "Autos Disponibles";
 }
 
-<h2 class="text-center mb-4" style="color: #44997e; font-weight: bold;">Autos Disponibles</h2>
+<link rel="stylesheet" href="/css/IndexAutos.css">
 
-<div class="text-end">
-    <a asp-action="Crear" asp-controller="Autos" class="btn btn-sm" style="background-color: #28A745; color: white; font-weight: bold;">Agregar Auto</a>
+
+<h2 class="title">Autos Disponibles</h2>
+
+<div class="controls mb-3 d-flex justify-content-end align-items-center">
+    <!-- DropDown -->
+    <select id="estadoFilter" class="selector">
+        <option value="">Todos los Estados</option>
+        <option value="Disponible">Disponible</option>
+        <option value="No Disponible">No Disponible</option>
+    </select>
+
+    <!-- Botón de Agregar Auto -->
+    <a asp-action="Crear" asp-controller="Autos" class="btn-add">Agregar Auto</a>
 </div>
 
-<table class="table table-striped shadow-sm rounded" style="overflow: hidden; border-radius: 10px;">
-    <thead class="text-white" style="background-color: #44997e;">
+<!-- Tabla de autos -->
+<table class="table autos-table" id="autosTable">
+    <thead>
         <tr>
             <th>Marca</th>
             <th>Modelo</th>
@@ -20,7 +32,6 @@
             <th>Estado</th>
             <th>Costo por Día</th>
             <th>Opciones</th>
-
         </tr>
     </thead>
     <tbody>
@@ -31,15 +42,44 @@
                 <td>@auto.Modelo</td>
                 <td>@auto.Placa</td>
                 <td>@auto.Tipo</td>
-                <td>@auto.Estado</td>
+                <td class="estado">@auto.Estado</td>
                 <td>@auto.CostoDia.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("en-US"))</td>
                 <td>
-                    <a asp-action="Editar" asp-route-id="@auto.IdAuto" class="btn btn-sm" style="background-color: #44997e; color: white; font-weight: bold;">Editar</a>
-                    <a asp-action="Delete" asp-route-id="@auto.IdAuto" class="btn btn-sm btn-danger" onclick="return confirm('¿Estás seguro de que deseas eliminar este auto?');" style="font-weight: bold;">Eliminar</a>
+                    <a asp-action="Editar" asp-route-id="@auto.IdAuto" class="btn-action btn-edit">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@auto.IdAuto" class="btn-action btn-delete" onclick="return confirm('¿Estás seguro de que deseas eliminar este auto?');">Eliminar</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
 
-<hr />
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const estadoFilter = document.getElementById('estadoFilter'); // Selector del filtro
+        const autosTable = document.getElementById('autosTable'); // Tabla completa
+        const tbody = autosTable.querySelector('tbody'); // Cuerpo de la tabla
+
+        // Evento para manejar el cambio en el filtro
+        estadoFilter.addEventListener('change', function () {
+            const filtro = this.value.toLowerCase(); // Convertir a minúsculas para comparación
+            const filas = Array.from(tbody.querySelectorAll('tr')); // Obtener todas las filas
+
+            // Ordenar filas: las que coincidan con el filtro van al principio
+            filas.sort((filaA, filaB) => {
+                const estadoA = filaA.querySelector('.estado').textContent.toLowerCase();
+                const estadoB = filaB.querySelector('.estado').textContent.toLowerCase();
+
+                if (estadoA === filtro && estadoB !== filtro) {
+                    return -1; // Mover estadoA arriba
+                } else if (estadoA !== filtro && estadoB === filtro) {
+                    return 1; // Mover estadoB arriba
+                } else {
+                    return 0; // Mantener el orden original
+                }
+            });
+
+            // Reinsertar las filas en el tbody ordenadas
+            filas.forEach(fila => tbody.appendChild(fila));
+        });
+    });
+</script>

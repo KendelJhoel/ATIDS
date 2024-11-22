@@ -3,16 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - @(User.Identity.IsAuthenticated ? (User.IsInRole("Admin") ? "Panel de Administración" : "Bienvenido " + User.Identity.Name) : "ParcialATIS")</title>
+    <title>@ViewData["Title"] - @(User.Identity.IsAuthenticated ? (User.IsInRole("Admin") ? "Panel de Administración" : "Renta de Vehículos") : "ParcialATIS")</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/navbar.css" asp-append-version="true" />
+
     <link rel="stylesheet" href="~/ParcialATIS.styles.css" asp-append-version="true" />
 </head>
 <body>
 
     <!-- Navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #44997e; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom" style="background-color: #2c3e50; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
             <div class="container">
                 <!-- Título dinámico con redirección -->
                 <a class="navbar-brand fw-bold"
@@ -52,7 +54,7 @@
                                     <a class="nav-link text-white" asp-area="" asp-controller="Autos" asp-action="autosD">Vehículos</a>
                                 </li>
                                 <li class="nav-item">
-                                            <a class="nav-link text-white" asp-area="" asp-controller="Devoluciones" asp-action="HistorialCl">Mi Historial</a>
+                                    <a class="nav-link text-white" asp-area="" asp-controller="Devoluciones" asp-action="HistorialCl">Mi Historial</a>
                                 </li>
                             }
                             <!-- Opción de Cerrar Sesión como enlace -->
@@ -71,6 +73,7 @@
                 </div>
             </div>
         </nav>
+
     </header>
 
     <!-- Mensajes flotantes -->
@@ -99,13 +102,17 @@
     </div>
 
     <!-- Footer -->
-    <footer class="text-white" style="background-color: #2e2e2e; padding: 20px 0;">
+    <footer>
         <div class="container text-center">
-            <span>&copy; 2024 - ParcialATIS - <a href="~/Home/Privacy" class="text-decoration-none" style="color: #44997e;">Privacidad</a></span>
+            <span>
+                &copy; 2024 - ParcialATIS -
+                <a href="~/Home/Privacy" class="text-decoration-none">Privacidad</a>
+            </span>
         </div>
     </footer>
 
-    <!-- Scripts -->
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

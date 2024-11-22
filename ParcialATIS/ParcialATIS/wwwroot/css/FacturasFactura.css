@@ -1,0 +1,25 @@
+﻿/* Botón Regresar al Inicio */
+#regresarButton {
+    background-color: #2c3e50; /* Azul predeterminado */
+    color: white; /* Texto blanco */
+    font-size: 1rem; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    border: none; /* Sin bordes */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 12px 20px; /* Espaciado interno */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+}
+
+    /* Hover para el botón */
+    #regresarButton:hover {
+        background-color: #6a7887; /* Azul más oscuro en hover */
+        transform: scale(1.01); /* Aumenta ligeramente el tamaño */
+        cursor: pointer; /* Cambia el cursor a mano */
+    }
+
+    /* Estilo para el texto cuando se enfoca */
+    #regresarButton:focus {
+        outline: 2px solid #0056b3; /* Contorno azul oscuro */
+        outline-offset: 2px; /* Espacio del contorno */
+    }

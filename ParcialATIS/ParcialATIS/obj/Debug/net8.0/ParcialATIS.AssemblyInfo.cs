@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ParcialATIS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dec44af197ac83b9cb2afda30f062e340db954c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc804f59e551f6f0cdd8d20c56a716dbb316dfe3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ParcialATIS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ParcialATIS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

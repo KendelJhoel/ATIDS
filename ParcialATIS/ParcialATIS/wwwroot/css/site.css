@@ -18,7 +18,7 @@ html {
 
 html {
     position: relative;
-    min-height: 100%;
+    max-height: 100%;
 }
 
 body {
@@ -28,4 +28,8 @@ body {
 .carousel-image {
     height: 800px; 
     object-fit: cover;
+}
+
+cuadro {
+    margint-top: 20px;
 }
